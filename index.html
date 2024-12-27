@@ -1,0 +1,2925 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charSet="utf-8" />
+    <title>Total Daily Energy Expenditure (TDEE) &amp; Macros Calculator | Fitness | Bulking | Cutting</title>
+    <meta property="og:title" content="Total Daily Energy Expenditure (TDEE) &amp; Macros Calculator | Fitness | Bulking | Cutting" />
+    <meta name="description" content="Calculate how many calories you burn every day, and learn how much Macros (carbs, fat and protein) you need to consume per day based on your Bulking/Cutting goal." />
+    <meta property="og:description" content="Calculate how many calories you burn every day, and learn how much Macros (carbs, fat and protein) you need to consume per day based on your Bulking/Cutting goal." />
+    <link rel="shortcut icon" href="https://www.calculatemacro.com/favicon.ico" />
+    <link rel="icon" href="https://www.calculatemacro.com/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://www.calculatemacro.com/favicon.png" type="image/png" />
+    <link rel="alternate" hreflang="en" href="https://www.calculatemacro.com/" />
+    <link rel="alternate" hreflang="zh" href="https://www.calculatemacro.com/zh-tw" />
+    <link rel="alternate" hreflang="zh-TW" href="https://www.calculatemacro.com/zh-tw" />
+    <link rel="alternate" hreflang="zh-HK" href="https://www.calculatemacro.com/zh-hk" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.calculatemacro.com/zh-cn" />
+    <link rel="alternate" hreflang="x-default" href="https://www.calculatemacro.com/" />
+    <meta name="next-head-count" content="15" />
+    <link rel="preload" href="./_next/static/css/70933414f8374f9467e7.css" as="style" />
+    <link rel="stylesheet" href="./_next/static/css/70933414f8374f9467e7.css" data-n-g="" />
+    <link rel="preload" href="./_next/static/css/be3a700a29411f0cdc6a.css" as="style" />
+    <link rel="stylesheet" href="./_next/static/css/be3a700a29411f0cdc6a.css" data-n-p="" />
+    <noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="./_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"></script>
+    <script src="./_next/static/chunks/webpack-281a2b91587ac3728511.js" defer=""></script>
+    <script src="./_next/static/chunks/framework-1eefeb1ba225146588ca.js" defer=""></script>
+    <script src="./_next/static/chunks/main-c4f2541b93e4ae8b71f8.js" defer=""></script>
+    <script src="./_next/static/chunks/pages/_app-c1ca228b5a5f5674413d.js" defer=""></script>
+    <script src="./_next/static/chunks/440-c1579562c52ca2bd3fe5.js" defer=""></script>
+    <script src="./_next/static/chunks/33-0e365691238cf04b4cfa.js" defer=""></script>
+    <script src="./_next/static/chunks/pages/index-b5d4acf1133915864760.js" defer=""></script>
+    <script src="./_next/static/q8uAFVddB3-DoaCuKEJl0/_buildManifest.js" defer=""></script>
+    <script src="./_next/static/q8uAFVddB3-DoaCuKEJl0/_ssgManifest.js" defer=""></script>
+  </head>
+  <body>
+    <script>
+      (function setScript(initialValue) {
+        var mql = window.matchMedia("(prefers-color-scheme: dark)");
+        var systemPreference = mql.matches ? "dark" : "light";
+        var persistedPreference;
+        try {
+          persistedPreference = localStorage.getItem("chakra-ui-color-mode");
+        } catch (error) {
+          console.log("Chakra UI: localStorage is not available. Color mode persistence might not work as expected");
+        }
+        var isInStorage = typeof persistedPreference === "string";
+        var colorMode;
+        if (isInStorage) {
+          colorMode = persistedPreference;
+        } else {
+          colorMode = initialValue === "system" ? systemPreference : initialValue;
+        }
+        if (colorMode) {
+          var root = document.documentElement;
+          root.style.setProperty("--chakra-ui-color-mode", colorMode);
+        }
+      })('light')
+    </script>
+    <div id="__next">
+      <style data-emotion="css-global o7558t">
+        :host,
+        :root {
+          --chakra-ring-inset: var(--chakra-empty,
+              /*!*/
+              /*!*/
+            );
+          --chakra-ring-offset-width: 0px;
+          --chakra-ring-offset-color: #fff;
+          --chakra-ring-color: rgba(66, 153, 225, 0.6);
+          --chakra-ring-offset-shadow: 0 0 #0000;
+          --chakra-ring-shadow: 0 0 #0000;
+          --chakra-space-x-reverse: 0;
+          --chakra-space-y-reverse: 0;
+          --chakra-colors-transparent: transparent;
+          --chakra-colors-current: currentColor;
+          --chakra-colors-black: #000000;
+          --chakra-colors-white: #FFFFFF;
+          --chakra-colors-whiteAlpha-50: rgba(255, 255, 255, 0.04);
+          --chakra-colors-whiteAlpha-100: rgba(255, 255, 255, 0.06);
+          --chakra-colors-whiteAlpha-200: rgba(255, 255, 255, 0.08);
+          --chakra-colors-whiteAlpha-300: rgba(255, 255, 255, 0.16);
+          --chakra-colors-whiteAlpha-400: rgba(255, 255, 255, 0.24);
+          --chakra-colors-whiteAlpha-500: rgba(255, 255, 255, 0.36);
+          --chakra-colors-whiteAlpha-600: rgba(255, 255, 255, 0.48);
+          --chakra-colors-whiteAlpha-700: rgba(255, 255, 255, 0.64);
+          --chakra-colors-whiteAlpha-800: rgba(255, 255, 255, 0.80);
+          --chakra-colors-whiteAlpha-900: rgba(255, 255, 255, 0.92);
+          --chakra-colors-blackAlpha-50: rgba(0, 0, 0, 0.04);
+          --chakra-colors-blackAlpha-100: rgba(0, 0, 0, 0.06);
+          --chakra-colors-blackAlpha-200: rgba(0, 0, 0, 0.08);
+          --chakra-colors-blackAlpha-300: rgba(0, 0, 0, 0.16);
+          --chakra-colors-blackAlpha-400: rgba(0, 0, 0, 0.24);
+          --chakra-colors-blackAlpha-500: rgba(0, 0, 0, 0.36);
+          --chakra-colors-blackAlpha-600: rgba(0, 0, 0, 0.48);
+          --chakra-colors-blackAlpha-700: rgba(0, 0, 0, 0.64);
+          --chakra-colors-blackAlpha-800: rgba(0, 0, 0, 0.80);
+          --chakra-colors-blackAlpha-900: rgba(0, 0, 0, 0.92);
+          --chakra-colors-gray-50: #F7FAFC;
+          --chakra-colors-gray-100: #EDF2F7;
+          --chakra-colors-gray-200: #E2E8F0;
+          --chakra-colors-gray-300: #CBD5E0;
+          --chakra-colors-gray-400: #A0AEC0;
+          --chakra-colors-gray-500: #718096;
+          --chakra-colors-gray-600: #4A5568;
+          --chakra-colors-gray-700: #2D3748;
+          --chakra-colors-gray-800: #1A202C;
+          --chakra-colors-gray-900: #171923;
+          --chakra-colors-red-50: #FFF5F5;
+          --chakra-colors-red-100: #FED7D7;
+          --chakra-colors-red-200: #FEB2B2;
+          --chakra-colors-red-300: #FC8181;
+          --chakra-colors-red-400: #F56565;
+          --chakra-colors-red-500: #E53E3E;
+          --chakra-colors-red-600: #C53030;
+          --chakra-colors-red-700: #9B2C2C;
+          --chakra-colors-red-800: #822727;
+          --chakra-colors-red-900: #63171B;
+          --chakra-colors-orange-50: #FFFAF0;
+          --chakra-colors-orange-100: #FEEBC8;
+          --chakra-colors-orange-200: #FBD38D;
+          --chakra-colors-orange-300: #F6AD55;
+          --chakra-colors-orange-400: #ED8936;
+          --chakra-colors-orange-500: #DD6B20;
+          --chakra-colors-orange-600: #C05621;
+          --chakra-colors-orange-700: #9C4221;
+          --chakra-colors-orange-800: #7B341E;
+          --chakra-colors-orange-900: #652B19;
+          --chakra-colors-yellow-50: #FFFFF0;
+          --chakra-colors-yellow-100: #FEFCBF;
+          --chakra-colors-yellow-200: #FAF089;
+          --chakra-colors-yellow-300: #F6E05E;
+          --chakra-colors-yellow-400: #ECC94B;
+          --chakra-colors-yellow-500: #D69E2E;
+          --chakra-colors-yellow-600: #B7791F;
+          --chakra-colors-yellow-700: #975A16;
+          --chakra-colors-yellow-800: #744210;
+          --chakra-colors-yellow-900: #5F370E;
+          --chakra-colors-green-50: #F0FFF4;
+          --chakra-colors-green-100: #C6F6D5;
+          --chakra-colors-green-200: #9AE6B4;
+          --chakra-colors-green-300: #68D391;
+          --chakra-colors-green-400: #48BB78;
+          --chakra-colors-green-500: #38A169;
+          --chakra-colors-green-600: #2F855A;
+          --chakra-colors-green-700: #276749;
+          --chakra-colors-green-800: #22543D;
+          --chakra-colors-green-900: #1C4532;
+          --chakra-colors-teal-50: #E6FFFA;
+          --chakra-colors-teal-100: #B2F5EA;
+          --chakra-colors-teal-200: #81E6D9;
+          --chakra-colors-teal-300: #4FD1C5;
+          --chakra-colors-teal-400: #38B2AC;
+          --chakra-colors-teal-500: #319795;
+          --chakra-colors-teal-600: #2C7A7B;
+          --chakra-colors-teal-700: #285E61;
+          --chakra-colors-teal-800: #234E52;
+          --chakra-colors-teal-900: #1D4044;
+          --chakra-colors-blue-50: #ebf8ff;
+          --chakra-colors-blue-100: #bee3f8;
+          --chakra-colors-blue-200: #90cdf4;
+          --chakra-colors-blue-300: #63b3ed;
+          --chakra-colors-blue-400: #4299e1;
+          --chakra-colors-blue-500: #3182ce;
+          --chakra-colors-blue-600: #2b6cb0;
+          --chakra-colors-blue-700: #2c5282;
+          --chakra-colors-blue-800: #2a4365;
+          --chakra-colors-blue-900: #1A365D;
+          --chakra-colors-cyan-50: #EDFDFD;
+          --chakra-colors-cyan-100: #C4F1F9;
+          --chakra-colors-cyan-200: #9DECF9;
+          --chakra-colors-cyan-300: #76E4F7;
+          --chakra-colors-cyan-400: #0BC5EA;
+          --chakra-colors-cyan-500: #00B5D8;
+          --chakra-colors-cyan-600: #00A3C4;
+          --chakra-colors-cyan-700: #0987A0;
+          --chakra-colors-cyan-800: #086F83;
+          --chakra-colors-cyan-900: #065666;
+          --chakra-colors-purple-50: #FAF5FF;
+          --chakra-colors-purple-100: #E9D8FD;
+          --chakra-colors-purple-200: #D6BCFA;
+          --chakra-colors-purple-300: #B794F4;
+          --chakra-colors-purple-400: #9F7AEA;
+          --chakra-colors-purple-500: #805AD5;
+          --chakra-colors-purple-600: #6B46C1;
+          --chakra-colors-purple-700: #553C9A;
+          --chakra-colors-purple-800: #44337A;
+          --chakra-colors-purple-900: #322659;
+          --chakra-colors-pink-50: #FFF5F7;
+          --chakra-colors-pink-100: #FED7E2;
+          --chakra-colors-pink-200: #FBB6CE;
+          --chakra-colors-pink-300: #F687B3;
+          --chakra-colors-pink-400: #ED64A6;
+          --chakra-colors-pink-500: #D53F8C;
+          --chakra-colors-pink-600: #B83280;
+          --chakra-colors-pink-700: #97266D;
+          --chakra-colors-pink-800: #702459;
+          --chakra-colors-pink-900: #521B41;
+          --chakra-colors-linkedin-50: #E8F4F9;
+          --chakra-colors-linkedin-100: #CFEDFB;
+          --chakra-colors-linkedin-200: #9BDAF3;
+          --chakra-colors-linkedin-300: #68C7EC;
+          --chakra-colors-linkedin-400: #34B3E4;
+          --chakra-colors-linkedin-500: #00A0DC;
+          --chakra-colors-linkedin-600: #008CC9;
+          --chakra-colors-linkedin-700: #0077B5;
+          --chakra-colors-linkedin-800: #005E93;
+          --chakra-colors-linkedin-900: #004471;
+          --chakra-colors-facebook-50: #E8F4F9;
+          --chakra-colors-facebook-100: #D9DEE9;
+          --chakra-colors-facebook-200: #B7C2DA;
+          --chakra-colors-facebook-300: #6482C0;
+          --chakra-colors-facebook-400: #4267B2;
+          --chakra-colors-facebook-500: #385898;
+          --chakra-colors-facebook-600: #314E89;
+          --chakra-colors-facebook-700: #29487D;
+          --chakra-colors-facebook-800: #223B67;
+          --chakra-colors-facebook-900: #1E355B;
+          --chakra-colors-messenger-50: #D0E6FF;
+          --chakra-colors-messenger-100: #B9DAFF;
+          --chakra-colors-messenger-200: #A2CDFF;
+          --chakra-colors-messenger-300: #7AB8FF;
+          --chakra-colors-messenger-400: #2E90FF;
+          --chakra-colors-messenger-500: #0078FF;
+          --chakra-colors-messenger-600: #0063D1;
+          --chakra-colors-messenger-700: #0052AC;
+          --chakra-colors-messenger-800: #003C7E;
+          --chakra-colors-messenger-900: #002C5C;
+          --chakra-colors-whatsapp-50: #dffeec;
+          --chakra-colors-whatsapp-100: #b9f5d0;
+          --chakra-colors-whatsapp-200: #90edb3;
+          --chakra-colors-whatsapp-300: #65e495;
+          --chakra-colors-whatsapp-400: #3cdd78;
+          --chakra-colors-whatsapp-500: #22c35e;
+          --chakra-colors-whatsapp-600: #179848;
+          --chakra-colors-whatsapp-700: #0c6c33;
+          --chakra-colors-whatsapp-800: #01421c;
+          --chakra-colors-whatsapp-900: #001803;
+          --chakra-colors-twitter-50: #E5F4FD;
+          --chakra-colors-twitter-100: #C8E9FB;
+          --chakra-colors-twitter-200: #A8DCFA;
+          --chakra-colors-twitter-300: #83CDF7;
+          --chakra-colors-twitter-400: #57BBF5;
+          --chakra-colors-twitter-500: #1DA1F2;
+          --chakra-colors-twitter-600: #1A94DA;
+          --chakra-colors-twitter-700: #1681BF;
+          --chakra-colors-twitter-800: #136B9E;
+          --chakra-colors-twitter-900: #0D4D71;
+          --chakra-colors-telegram-50: #E3F2F9;
+          --chakra-colors-telegram-100: #C5E4F3;
+          --chakra-colors-telegram-200: #A2D4EC;
+          --chakra-colors-telegram-300: #7AC1E4;
+          --chakra-colors-telegram-400: #47A9DA;
+          --chakra-colors-telegram-500: #0088CC;
+          --chakra-colors-telegram-600: #007AB8;
+          --chakra-colors-telegram-700: #006BA1;
+          --chakra-colors-telegram-800: #005885;
+          --chakra-colors-telegram-900: #003F5E;
+          --chakra-borders-none: 0;
+          --chakra-borders-1px: 1px solid;
+          --chakra-borders-2px: 2px solid;
+          --chakra-borders-4px: 4px solid;
+          --chakra-borders-8px: 8px solid;
+          --chakra-fonts-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          --chakra-fonts-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          --chakra-fonts-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          --chakra-fontSizes-xs: 0.75rem;
+          --chakra-fontSizes-sm: 0.875rem;
+          --chakra-fontSizes-md: 1rem;
+          --chakra-fontSizes-lg: 1.125rem;
+          --chakra-fontSizes-xl: 1.25rem;
+          --chakra-fontSizes-2xl: 1.5rem;
+          --chakra-fontSizes-3xl: 1.875rem;
+          --chakra-fontSizes-4xl: 2.25rem;
+          --chakra-fontSizes-5xl: 3rem;
+          --chakra-fontSizes-6xl: 3.75rem;
+          --chakra-fontSizes-7xl: 4.5rem;
+          --chakra-fontSizes-8xl: 6rem;
+          --chakra-fontSizes-9xl: 8rem;
+          --chakra-fontWeights-hairline: 100;
+          --chakra-fontWeights-thin: 200;
+          --chakra-fontWeights-light: 300;
+          --chakra-fontWeights-normal: 400;
+          --chakra-fontWeights-medium: 500;
+          --chakra-fontWeights-semibold: 600;
+          --chakra-fontWeights-bold: 700;
+          --chakra-fontWeights-extrabold: 800;
+          --chakra-fontWeights-black: 900;
+          --chakra-letterSpacings-tighter: -0.05em;
+          --chakra-letterSpacings-tight: -0.025em;
+          --chakra-letterSpacings-normal: 0;
+          --chakra-letterSpacings-wide: 0.025em;
+          --chakra-letterSpacings-wider: 0.05em;
+          --chakra-letterSpacings-widest: 0.1em;
+          --chakra-lineHeights-3: .75rem;
+          --chakra-lineHeights-4: 1rem;
+          --chakra-lineHeights-5: 1.25rem;
+          --chakra-lineHeights-6: 1.5rem;
+          --chakra-lineHeights-7: 1.75rem;
+          --chakra-lineHeights-8: 2rem;
+          --chakra-lineHeights-9: 2.25rem;
+          --chakra-lineHeights-10: 2.5rem;
+          --chakra-lineHeights-normal: normal;
+          --chakra-lineHeights-none: 1;
+          --chakra-lineHeights-shorter: 1.25;
+          --chakra-lineHeights-short: 1.375;
+          --chakra-lineHeights-base: 1.5;
+          --chakra-lineHeights-tall: 1.625;
+          --chakra-lineHeights-taller: 2;
+          --chakra-radii-none: 0;
+          --chakra-radii-sm: 0.125rem;
+          --chakra-radii-base: 0.25rem;
+          --chakra-radii-md: 0.375rem;
+          --chakra-radii-lg: 0.5rem;
+          --chakra-radii-xl: 0.75rem;
+          --chakra-radii-2xl: 1rem;
+          --chakra-radii-3xl: 1.5rem;
+          --chakra-radii-full: 9999px;
+          --chakra-space-1: 0.25rem;
+          --chakra-space-2: 0.5rem;
+          --chakra-space-3: 0.75rem;
+          --chakra-space-4: 1rem;
+          --chakra-space-5: 1.25rem;
+          --chakra-space-6: 1.5rem;
+          --chakra-space-7: 1.75rem;
+          --chakra-space-8: 2rem;
+          --chakra-space-9: 2.25rem;
+          --chakra-space-10: 2.5rem;
+          --chakra-space-12: 3rem;
+          --chakra-space-14: 3.5rem;
+          --chakra-space-16: 4rem;
+          --chakra-space-20: 5rem;
+          --chakra-space-24: 6rem;
+          --chakra-space-28: 7rem;
+          --chakra-space-32: 8rem;
+          --chakra-space-36: 9rem;
+          --chakra-space-40: 10rem;
+          --chakra-space-44: 11rem;
+          --chakra-space-48: 12rem;
+          --chakra-space-52: 13rem;
+          --chakra-space-56: 14rem;
+          --chakra-space-60: 15rem;
+          --chakra-space-64: 16rem;
+          --chakra-space-72: 18rem;
+          --chakra-space-80: 20rem;
+          --chakra-space-96: 24rem;
+          --chakra-space-px: 1px;
+          --chakra-space-0\.5: 0.125rem;
+          --chakra-space-1\.5: 0.375rem;
+          --chakra-space-2\.5: 0.625rem;
+          --chakra-space-3\.5: 0.875rem;
+          --chakra-shadows-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+          --chakra-shadows-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          --chakra-shadows-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          --chakra-shadows-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          --chakra-shadows-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          --chakra-shadows-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          --chakra-shadows-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+          --chakra-shadows-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+          --chakra-shadows-none: none;
+          --chakra-shadows-dark-lg: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px;
+          --chakra-sizes-1: 0.25rem;
+          --chakra-sizes-2: 0.5rem;
+          --chakra-sizes-3: 0.75rem;
+          --chakra-sizes-4: 1rem;
+          --chakra-sizes-5: 1.25rem;
+          --chakra-sizes-6: 1.5rem;
+          --chakra-sizes-7: 1.75rem;
+          --chakra-sizes-8: 2rem;
+          --chakra-sizes-9: 2.25rem;
+          --chakra-sizes-10: 2.5rem;
+          --chakra-sizes-12: 3rem;
+          --chakra-sizes-14: 3.5rem;
+          --chakra-sizes-16: 4rem;
+          --chakra-sizes-20: 5rem;
+          --chakra-sizes-24: 6rem;
+          --chakra-sizes-28: 7rem;
+          --chakra-sizes-32: 8rem;
+          --chakra-sizes-36: 9rem;
+          --chakra-sizes-40: 10rem;
+          --chakra-sizes-44: 11rem;
+          --chakra-sizes-48: 12rem;
+          --chakra-sizes-52: 13rem;
+          --chakra-sizes-56: 14rem;
+          --chakra-sizes-60: 15rem;
+          --chakra-sizes-64: 16rem;
+          --chakra-sizes-72: 18rem;
+          --chakra-sizes-80: 20rem;
+          --chakra-sizes-96: 24rem;
+          --chakra-sizes-px: 1px;
+          --chakra-sizes-0\.5: 0.125rem;
+          --chakra-sizes-1\.5: 0.375rem;
+          --chakra-sizes-2\.5: 0.625rem;
+          --chakra-sizes-3\.5: 0.875rem;
+          --chakra-sizes-max: max-content;
+          --chakra-sizes-min: min-content;
+          --chakra-sizes-full: 100%;
+          --chakra-sizes-3xs: 14rem;
+          --chakra-sizes-2xs: 16rem;
+          --chakra-sizes-xs: 20rem;
+          --chakra-sizes-sm: 24rem;
+          --chakra-sizes-md: 28rem;
+          --chakra-sizes-lg: 32rem;
+          --chakra-sizes-xl: 36rem;
+          --chakra-sizes-2xl: 42rem;
+          --chakra-sizes-3xl: 48rem;
+          --chakra-sizes-4xl: 56rem;
+          --chakra-sizes-5xl: 64rem;
+          --chakra-sizes-6xl: 72rem;
+          --chakra-sizes-7xl: 80rem;
+          --chakra-sizes-8xl: 90rem;
+          --chakra-sizes-container-sm: 640px;
+          --chakra-sizes-container-md: 768px;
+          --chakra-sizes-container-lg: 1024px;
+          --chakra-sizes-container-xl: 1280px;
+          --chakra-zIndices-hide: -1;
+          --chakra-zIndices-auto: auto;
+          --chakra-zIndices-base: 0;
+          --chakra-zIndices-docked: 10;
+          --chakra-zIndices-dropdown: 1000;
+          --chakra-zIndices-sticky: 1100;
+          --chakra-zIndices-banner: 1200;
+          --chakra-zIndices-overlay: 1300;
+          --chakra-zIndices-modal: 1400;
+          --chakra-zIndices-popover: 1500;
+          --chakra-zIndices-skipLink: 1600;
+          --chakra-zIndices-toast: 1700;
+          --chakra-zIndices-tooltip: 1800;
+          --chakra-transition-property-common: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+          --chakra-transition-property-colors: background-color, border-color, color, fill, stroke;
+          --chakra-transition-property-dimensions: width, height;
+          --chakra-transition-property-position: left, right, top, bottom;
+          --chakra-transition-property-background: background-color, background-image, background-position;
+          --chakra-transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+          --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+          --chakra-transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+          --chakra-transition-duration-ultra-fast: 50ms;
+          --chakra-transition-duration-faster: 100ms;
+          --chakra-transition-duration-fast: 150ms;
+          --chakra-transition-duration-normal: 200ms;
+          --chakra-transition-duration-slow: 300ms;
+          --chakra-transition-duration-slower: 400ms;
+          --chakra-transition-duration-ultra-slow: 500ms;
+          --chakra-blur-none: 0;
+          --chakra-blur-sm: 4px;
+          --chakra-blur-base: 8px;
+          --chakra-blur-md: 12px;
+          --chakra-blur-lg: 16px;
+          --chakra-blur-xl: 24px;
+          --chakra-blur-2xl: 40px;
+          --chakra-blur-3xl: 64px;
+        }
+      </style>
+      <style data-emotion="css-global 1syi0wy">
+        html {
+          line-height: 1.5;
+          -webkit-text-size-adjust: 100%;
+          font-family: system-ui, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          -moz-osx-font-smoothing: grayscale;
+          touch-action: manipulation;
+        }
+
+        body {
+          position: relative;
+          min-height: 100%;
+          font-feature-settings: 'kern';
+        }
+
+        *,
+        *::before,
+        *::after {
+          border-width: 0;
+          border-style: solid;
+          box-sizing: border-box;
+        }
+
+        main {
+          display: block;
+        }
+
+        hr {
+          border-top-width: 1px;
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+        }
+
+        pre,
+        code,
+        kbd,
+        samp {
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+          font-size: 1em;
+        }
+
+        a {
+          background-color: transparent;
+          color: inherit;
+          -webkit-text-decoration: inherit;
+          text-decoration: inherit;
+        }
+
+        abbr[title] {
+          border-bottom: none;
+          -webkit-text-decoration: underline;
+          text-decoration: underline;
+          -webkit-text-decoration: underline dotted;
+          -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+        }
+
+        b,
+        strong {
+          font-weight: bold;
+        }
+
+        small {
+          font-size: 80%;
+        }
+
+        sub,
+        sup {
+          font-size: 75%;
+          line-height: 0;
+          position: relative;
+          vertical-align: baseline;
+        }
+
+        sub {
+          bottom: -0.25em;
+        }
+
+        sup {
+          top: -0.5em;
+        }
+
+        img {
+          border-style: none;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+          font-family: inherit;
+          font-size: 100%;
+          line-height: 1.15;
+          margin: 0;
+        }
+
+        button,
+        input {
+          overflow: visible;
+        }
+
+        button,
+        select {
+          text-transform: none;
+        }
+
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+          border-style: none;
+          padding: 0;
+        }
+
+        fieldset {
+          padding: 0.35em 0.75em 0.625em;
+        }
+
+        legend {
+          box-sizing: border-box;
+          color: inherit;
+          display: table;
+          max-width: 100%;
+          padding: 0;
+          white-space: normal;
+        }
+
+        progress {
+          vertical-align: baseline;
+        }
+
+        textarea {
+          overflow: auto;
+        }
+
+        [type="checkbox"],
+        [type="radio"] {
+          box-sizing: border-box;
+          padding: 0;
+        }
+
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none !important;
+        }
+
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
+
+        [type="search"] {
+          -webkit-appearance: textfield;
+          outline-offset: -2px;
+        }
+
+        [type="search"]::-webkit-search-decoration {
+          -webkit-appearance: none !important;
+        }
+
+        ::-webkit-file-upload-button {
+          -webkit-appearance: button;
+          font: inherit;
+        }
+
+        details {
+          display: block;
+        }
+
+        summary {
+          display: -webkit-box;
+          display: -webkit-list-item;
+          display: -ms-list-itembox;
+          display: list-item;
+        }
+
+        template {
+          display: none;
+        }
+
+        [hidden] {
+          display: none !important;
+        }
+
+        body,
+        blockquote,
+        dl,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        figure,
+        p,
+        pre {
+          margin: 0;
+        }
+
+        button {
+          background: transparent;
+          padding: 0;
+        }
+
+        fieldset {
+          margin: 0;
+          padding: 0;
+        }
+
+        ol,
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+
+        textarea {
+          resize: vertical;
+        }
+
+        button,
+        [role="button"] {
+          cursor: pointer;
+        }
+
+        button::-moz-focus-inner {
+          border: 0 !important;
+        }
+
+        table {
+          border-collapse: collapse;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: inherit;
+          font-weight: inherit;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+          padding: 0;
+          line-height: inherit;
+          color: inherit;
+        }
+
+        img,
+        svg,
+        video,
+        canvas,
+        audio,
+        iframe,
+        embed,
+        object {
+          display: block;
+          vertical-align: middle;
+        }
+
+        img,
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+
+        [data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+          outline: none;
+          box-shadow: none;
+        }
+
+        select::-ms-expand {
+          display: none;
+        }
+      </style>
+      <style data-emotion="css-global 1baqkrf">
+        body {
+          font-family: var(--chakra-fonts-body);
+          color: var(--chakra-colors-gray-800);
+          background: var(--chakra-colors-white);
+          transition-property: background-color;
+          transition-duration: var(--chakra-transition-duration-normal);
+          line-height: var(--chakra-lineHeights-base);
+        }
+
+        *::-webkit-input-placeholder {
+          color: var(--chakra-colors-gray-400);
+        }
+
+        *::-moz-placeholder {
+          color: var(--chakra-colors-gray-400);
+        }
+
+        *:-ms-input-placeholder {
+          color: var(--chakra-colors-gray-400);
+        }
+
+        *::placeholder {
+          color: var(--chakra-colors-gray-400);
+        }
+
+        *,
+        *::before,
+        ::after {
+          border-color: var(--chakra-colors-gray-200);
+          word-wrap: break-word;
+        }
+      </style>
+      <div class="Home_container__1EcsU">
+        <style data-emotion="css 8yu771">
+          .css-8yu771 {
+            background-color: #fdfdf9;
+            z-index: 99;
+          }
+        </style>
+        <div class="Header_Container__2yhx5 css-8yu771">
+          <style data-emotion="css k008qs">
+            .css-k008qs {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+            }
+          </style>
+          <div class="Header_Header__37Gwn css-k008qs">
+            <style data-emotion="css 1syq16t">
+              .css-1syq16t {
+                padding: var(--chakra-space-2);
+              }
+            </style>
+            <div class="css-1syq16t">
+              <a class="Header_Home__1ePx2">
+                <style data-emotion="css 18j379d">
+                  .css-18j379d {
+                    font-family: var(--chakra-fonts-heading);
+                    font-weight: var(--chakra-fontWeights-bold);
+                    font-size: var(--chakra-fontSizes-xl);
+                    line-height: 1.2;
+                  }
+                </style>
+                <h2 class="chakra-heading css-18j379d" id="Header_homeName__2rTwQ">TDEE &amp; Macros Calculator</h2>
+              </a>
+            </div>
+            <style data-emotion="css 17xejub">
+              .css-17xejub {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                justify-self: stretch;
+                -webkit-align-self: stretch;
+                -ms-flex-item-align: stretch;
+                align-self: stretch;
+              }
+            </style>
+            <div class="css-17xejub"></div>
+            <style data-emotion="css 84zodg">
+              .css-84zodg {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+              }
+
+              .css-84zodg>*:not(style)~*:not(style) {
+                margin-top: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                margin-bottom: 0px;
+                -webkit-margin-start: 0.5rem;
+                margin-inline-start: 0.5rem;
+              }
+            </style>
+            <div class="chakra-stack css-84zodg">
+              <div class="css-0">
+                <style data-emotion="css dn5esd">
+                  .css-dn5esd {
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    position: relative;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    width: auto;
+                    line-height: 1.2;
+                    border-radius: var(--chakra-radii-md);
+                    font-weight: var(--chakra-fontWeights-semibold);
+                    transition-property: var(--chakra-transition-property-common);
+                    transition-duration: var(--chakra-transition-duration-normal);
+                    height: var(--chakra-sizes-10);
+                    min-width: var(--chakra-sizes-10);
+                    font-size: var(--chakra-fontSizes-md);
+                    -webkit-padding-start: var(--chakra-space-4);
+                    padding-inline-start: var(--chakra-space-4);
+                    -webkit-padding-end: var(--chakra-space-4);
+                    padding-inline-end: var(--chakra-space-4);
+                    background: var(--chakra-colors-gray-100);
+                    padding: 0px;
+                  }
+
+                  .css-dn5esd:focus,
+                  .css-dn5esd[data-focus] {
+                    box-shadow: var(--chakra-shadows-outline);
+                  }
+
+                  .css-dn5esd[disabled],
+                  .css-dn5esd[aria-disabled=true],
+                  .css-dn5esd[data-disabled] {
+                    opacity: 0.4;
+                    cursor: not-allowed;
+                    box-shadow: var(--chakra-shadows-none);
+                  }
+
+                  .css-dn5esd:hover,
+                  .css-dn5esd[data-hover] {
+                    background: var(--chakra-colors-gray-200);
+                  }
+
+                  .css-dn5esd:hover[disabled],
+                  .css-dn5esd[data-hover][disabled],
+                  .css-dn5esd:hover[aria-disabled=true],
+                  .css-dn5esd[data-hover][aria-disabled=true],
+                  .css-dn5esd:hover[data-disabled],
+                  .css-dn5esd[data-hover][data-disabled] {
+                    background: var(--chakra-colors-gray-100);
+                  }
+
+                  .css-dn5esd:active,
+                  .css-dn5esd[data-active] {
+                    background: var(--chakra-colors-gray-300);
+                  }
+                </style>
+                <button type="button" class="chakra-button css-dn5esd" aria-label="toggle color theme">
+                  <style data-emotion="css onkibi">
+                    .css-onkibi {
+                      width: 1em;
+                      height: 1em;
+                      display: inline-block;
+                      line-height: 1em;
+                      -webkit-flex-shrink: 0;
+                      -ms-flex-negative: 0;
+                      flex-shrink: 0;
+                      color: currentColor;
+                      vertical-align: middle;
+                    }
+                  </style>
+                  <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" aria-hidden="true">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor">
+                      <circle cx="12" cy="12" r="5"></circle>
+                      <path d="M12 1v2"></path>
+                      <path d="M12 21v2"></path>
+                      <path d="M4.22 4.22l1.42 1.42"></path>
+                      <path d="M18.36 18.36l1.42 1.42"></path>
+                      <path d="M1 12h2"></path>
+                      <path d="M21 12h2"></path>
+                      <path d="M4.22 19.78l1.42-1.42"></path>
+                      <path d="M18.36 5.64l1.42-1.42"></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <style data-emotion="css 1yod62q">
+                .css-1yod62q {
+                  width: 16vmin;
+                  height: -webkit-fit-content;
+                  height: -moz-fit-content;
+                  height: fit-content;
+                  position: relative;
+                  max-height: 40px;
+                }
+              </style>
+              <div class="chakra-select__wrapper css-1yod62q">
+                <style data-emotion="css 1tc12v8">
+                  .css-1tc12v8 {
+                    width: 100%;
+                    min-width: 0px;
+                    outline: 2px solid transparent;
+                    outline-offset: 2px;
+                    position: relative;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    transition-property: var(--chakra-transition-property-common);
+                    transition-duration: var(--chakra-transition-duration-normal);
+                    background: inherit;
+                    padding-bottom: 1px;
+                    line-height: var(--chakra-lineHeights-normal);
+                    font-size: var(--chakra-fontSizes-md);
+                    -webkit-padding-start: var(--chakra-space-4);
+                    padding-inline-start: var(--chakra-space-4);
+                    -webkit-padding-end: 2rem;
+                    padding-inline-end: 2rem;
+                    height: var(--chakra-sizes-10);
+                    border-radius: var(--chakra-radii-md);
+                    border: 1px solid;
+                    border-color: inherit;
+                  }
+
+                  .css-1tc12v8>option,
+                  .css-1tc12v8>optgroup {
+                    background: var(--chakra-colors-white);
+                  }
+
+                  .css-1tc12v8:hover,
+                  .css-1tc12v8[data-hover] {
+                    border-color: var(--chakra-colors-gray-300);
+                  }
+
+                  .css-1tc12v8[aria-readonly=true],
+                  .css-1tc12v8[readonly],
+                  .css-1tc12v8[data-readonly] {
+                    box-shadow: none !important;
+                    -webkit-user-select: all;
+                    -moz-user-select: all;
+                    -ms-user-select: all;
+                    user-select: all;
+                  }
+
+                  .css-1tc12v8[disabled],
+                  .css-1tc12v8[aria-disabled=true],
+                  .css-1tc12v8[data-disabled] {
+                    opacity: 0.4;
+                    cursor: not-allowed;
+                  }
+
+                  .css-1tc12v8[aria-invalid=true],
+                  .css-1tc12v8[data-invalid] {
+                    border-color: #E53E3E;
+                    box-shadow: 0 0 0 1px #E53E3E;
+                  }
+
+                  .css-1tc12v8:focus,
+                  .css-1tc12v8[data-focus] {
+                    z-index: unset;
+                    border-color: #3182ce;
+                    box-shadow: 0 0 0 1px #3182ce;
+                  }
+                </style>
+                <select class="chakra-select css-1tc12v8">
+                  <option selected="" value="en">English</option>
+                  <option value="zh">中文（台灣）</option>
+                  <option value="zh-hk">中文（香港）</option>
+                  <option value="zh-cn">中文（简体）</option>
+                </select>
+                <style data-emotion="css zj2dqk">
+                  .css-zj2dqk {
+                    width: 1.5rem;
+                    height: 100%;
+                    right: 0.5rem;
+                    position: absolute;
+                    color: currentColor;
+                    font-size: 1.25rem;
+
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    pointer-events: none;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                  }
+
+                  .css-zj2dqk[disabled],
+                  .css-zj2dqk[aria-disabled=true],
+                  .css-zj2dqk[data-disabled] {
+                    opacity: 0.5;
+                  }
+                </style>
+                <div class="chakra-select__icon-wrapper css-zj2dqk">
+                  <svg viewBox="0 0 24 24" role="presentation" class="chakra-select__icon" focusable="false" aria-hidden="true" style="width:1em;height:1em;color:currentColor">
+                    <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="Main_main__1Gu5z" style="background-color:beige">
+          <div class="Main_Content__24F-e css-0" style="background-color:white">
+            <h1 class="Main_title__G-Rlo">
+              <div class="css-0">Calculate your Total Daily Energy Expenditure and Recommended Macros Intake</div>
+            </h1>
+            <style data-emotion="css 1nxxqzd">
+              .css-1nxxqzd {
+                width: 100%;
+                -webkit-margin-start: 0px;
+                margin-inline-start: 0px;
+                -webkit-margin-end: 0px;
+                margin-inline-end: 0px;
+                max-width: 95%;
+                -webkit-padding-start: 1rem;
+                padding-inline-start: 1rem;
+                -webkit-padding-end: 1rem;
+                padding-inline-end: 1rem;
+              }
+            </style>
+            <div class="chakra-container Main_description__2T1n4 css-1nxxqzd">Calculate how many calories you burn every day, and learn how much Macros (carbs, fat and protein) you need to consume per day based on your Bulking/Cutting goal.</div>
+            <style data-emotion="css e41ztp">
+              .css-e41ztp {
+                width: 100%;
+                border-radius: var(--chakra-radii-lg);
+              }
+            </style>
+            <div class="Calculator_Calculator__3hTjz css-e41ztp">
+              <style data-emotion="css 13o7eu2">
+                .css-13o7eu2 {
+                  display: block;
+                }
+              </style>
+              <div class="chakra-tabs css-13o7eu2" id="unitSystem">
+                <style data-emotion="css 1pmekjw">
+                  .css-1pmekjw {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    -webkit-justify-content: flex-start;
+                    justify-content: flex-start;
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    margin-left: 1rem;
+                  }
+                </style>
+                <div role="tablist" aria-orientation="horizontal" class="chakra-tabs__tablist css-1pmekjw">
+                  <style data-emotion="css 1thn5bl">
+                    .css-1thn5bl {
+                      outline: 2px solid transparent;
+                      outline-offset: 2px;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      transition-property: var(--chakra-transition-property-common);
+                      transition-duration: var(--chakra-transition-duration-normal);
+                      font-size: var(--chakra-fontSizes-md);
+                      padding-top: var(--chakra-space-2);
+                      padding-bottom: var(--chakra-space-2);
+                      -webkit-padding-start: var(--chakra-space-4);
+                      padding-inline-start: var(--chakra-space-4);
+                      -webkit-padding-end: var(--chakra-space-4);
+                      padding-inline-end: var(--chakra-space-4);
+                      border-radius: var(--chakra-radii-full);
+                      font-weight: var(--chakra-fontWeights-semibold);
+                      color: var(--chakra-colors-gray-600);
+                    }
+
+                    .css-1thn5bl:focus,
+                    .css-1thn5bl[data-focus] {
+                      z-index: 1;
+                      box-shadow: var(--chakra-shadows-outline);
+                    }
+
+                    .css-1thn5bl[aria-selected=true],
+                    .css-1thn5bl[data-selected] {
+                      color: #285E61;
+                      background: #B2F5EA;
+                    }
+                  </style>
+                  <button id="unitSystem--tab--1" type="button" role="tab" tabindex="-1" aria-selected="false" aria-controls="unitSystem--tabpanel--1" class="chakra-tabs__tab css-1thn5bl">Metric</button>
+                  <button id="unitSystem--tab--1" type="button" role="tab" tabindex="-1" aria-selected="false" aria-controls="unitSystem--tabpanel--1" class="chakra-tabs__tab css-1thn5bl">Imperial</button>
+                </div>
+              </div>
+              <div class="Form_Content__2ABNh css-0">
+                <style data-emotion="css svjswr">
+                  .css-svjswr {
+                    opacity: 0.6;
+                    border: 0;
+                    border-color: inherit;
+                    border-style: solid;
+                    border-bottom-width: 1px;
+                    width: 100%;
+                  }
+                </style>
+                <hr aria-orientation="horizontal" class="chakra-divider css-svjswr" />
+                <style data-emotion="css 145kurz">
+                  .css-145kurz {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    margin-top: 1rem;
+                  }
+
+                  .css-145kurz>*:not(style)~*:not(style) {
+                    margin-top: var(--chakra-space-4);
+                    -webkit-margin-end: 0px;
+                    margin-inline-end: 0px;
+                    margin-bottom: 0px;
+                    -webkit-margin-start: 0px;
+                    margin-inline-start: 0px;
+                  }
+                </style>
+                <div class="chakra-stack css-145kurz">
+                  <style data-emotion="css 1kxonj9">
+                    .css-1kxonj9 {
+                      width: 100%;
+                      position: relative;
+                    }
+                  </style>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <style data-emotion="css 2gx1h6">
+                      .css-2gx1h6 {
+                        display: block;
+                        text-align: start;
+                        font-size: var(--chakra-fontSizes-md);
+                        -webkit-margin-end: var(--chakra-space-3);
+                        margin-inline-end: var(--chakra-space-3);
+                        margin-bottom: var(--chakra-space-2);
+                        font-weight: var(--chakra-fontWeights-medium);
+                        transition-property: var(--chakra-transition-property-common);
+                        transition-duration: var(--chakra-transition-duration-normal);
+                        opacity: 1;
+                      }
+
+                      .css-2gx1h6[disabled],
+                      .css-2gx1h6[aria-disabled=true],
+                      .css-2gx1h6[data-disabled] {
+                        opacity: 0.4;
+                      }
+                    </style>
+                    <label id="gender-label" for="gender" class="chakra-form__label css-2gx1h6">Gender</label>
+                    <div role="radiogroup" class="chakra-radio-group css-0">
+                      <style data-emotion="css 1y5q8ss">
+                        .css-1y5q8ss {
+                          display: -webkit-box;
+                          display: -webkit-flex;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-align-items: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-flex-direction: row;
+                          -ms-flex-direction: row;
+                          flex-direction: row;
+                        }
+
+                        .css-1y5q8ss>*:not(style)~*:not(style) {
+                          margin-top: 0px;
+                          -webkit-margin-end: 0px;
+                          margin-inline-end: 0px;
+                          margin-bottom: 0px;
+                          -webkit-margin-start: 24px;
+                          margin-inline-start: 24px;
+                        }
+                      </style>
+                      <div class="chakra-stack css-1y5q8ss">
+                        <style data-emotion="css 78joka">
+                          .css-78joka {
+                            display: -webkit-inline-box;
+                            display: -webkit-inline-flex;
+                            display: -ms-inline-flexbox;
+                            display: inline-flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            vertical-align: top;
+                          }
+                        </style>
+                        <label class="chakra-radio css-78joka">
+                          <input type="radio" class="chakra-radio__input" id="M" name="M" value="M" style="border:0px;clip:rect(0px, 0px, 0px, 0px);height:1px;width:1px;margin:-1px;padding:0px;overflow:hidden;white-space:nowrap;position:absolute" />
+                          <style data-emotion="css 1rggdzb">
+                            .css-1rggdzb {
+                              display: -webkit-inline-box;
+                              display: -webkit-inline-flex;
+                              display: -ms-inline-flexbox;
+                              display: inline-flex;
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              -webkit-justify-content: center;
+                              justify-content: center;
+                              -webkit-flex-shrink: 0;
+                              -ms-flex-negative: 0;
+                              flex-shrink: 0;
+                              width: var(--chakra-sizes-4);
+                              transition-property: box-shadow;
+                              transition-duration: var(--chakra-transition-duration-normal);
+                              border: 2px solid;
+                              border-radius: var(--chakra-radii-full);
+                              border-color: inherit;
+                              color: var(--chakra-colors-white);
+                              height: var(--chakra-sizes-4);
+                            }
+
+                            .css-1rggdzb[aria-checked=true],
+                            .css-1rggdzb[data-checked] {
+                              background: var(--chakra-colors-blue-500);
+                              border-color: var(--chakra-colors-blue-500);
+                              color: var(--chakra-colors-white);
+                            }
+
+                            .css-1rggdzb[aria-checked=true]:hover,
+                            .css-1rggdzb[data-checked]:hover,
+                            .css-1rggdzb[aria-checked=true][data-hover],
+                            .css-1rggdzb[data-checked][data-hover] {
+                              background: var(--chakra-colors-blue-600);
+                              border-color: var(--chakra-colors-blue-600);
+                            }
+
+                            .css-1rggdzb[aria-checked=true][disabled],
+                            .css-1rggdzb[data-checked][disabled],
+                            .css-1rggdzb[aria-checked=true][aria-disabled=true],
+                            .css-1rggdzb[data-checked][aria-disabled=true],
+                            .css-1rggdzb[aria-checked=true][data-disabled],
+                            .css-1rggdzb[data-checked][data-disabled] {
+                              border-color: var(--chakra-colors-gray-200);
+                              background: var(--chakra-colors-gray-200);
+                              color: var(--chakra-colors-gray-500);
+                            }
+
+                            .css-1rggdzb[aria-checked=true]::before,
+                            .css-1rggdzb[data-checked]::before {
+                              content: "";
+                              display: inline-block;
+                              position: relative;
+                              width: 50%;
+                              height: 50%;
+                              border-radius: 50%;
+                              background: currentColor;
+                            }
+
+                            .css-1rggdzb:indeterminate,
+                            .css-1rggdzb[aria-checked=mixed],
+                            .css-1rggdzb[data-indeterminate] {
+                              background: var(--chakra-colors-blue-500);
+                              border-color: var(--chakra-colors-blue-500);
+                              color: var(--chakra-colors-white);
+                            }
+
+                            .css-1rggdzb[disabled],
+                            .css-1rggdzb[aria-disabled=true],
+                            .css-1rggdzb[data-disabled] {
+                              background: var(--chakra-colors-gray-100);
+                              border-color: var(--chakra-colors-gray-100);
+                            }
+
+                            .css-1rggdzb:focus,
+                            .css-1rggdzb[data-focus] {
+                              box-shadow: var(--chakra-shadows-outline);
+                            }
+
+                            .css-1rggdzb[aria-invalid=true],
+                            .css-1rggdzb[data-invalid] {
+                              border-color: var(--chakra-colors-red-500);
+                            }
+                          </style>
+                          <span class="chakra-radio__control css-1rggdzb" aria-hidden="true"></span>
+                          <style data-emotion="css 1i66d7g">
+                            .css-1i66d7g {
+                              -webkit-user-select: none;
+                              -moz-user-select: none;
+                              -ms-user-select: none;
+                              user-select: none;
+                              -webkit-margin-start: 0.5rem;
+                              margin-inline-start: 0.5rem;
+                              font-size: var(--chakra-fontSizes-md);
+                            }
+
+                            .css-1i66d7g[disabled],
+                            .css-1i66d7g[aria-disabled=true],
+                            .css-1i66d7g[data-disabled] {
+                              opacity: 0.4;
+                            }
+                          </style>
+                          <span class="chakra-radio__label css-1i66d7g">Male</span>
+                        </label>
+                        <label class="chakra-radio css-78joka">
+                          <input type="radio" class="chakra-radio__input" id="F" name="M" value="F" style="border:0px;clip:rect(0px, 0px, 0px, 0px);height:1px;width:1px;margin:-1px;padding:0px;overflow:hidden;white-space:nowrap;position:absolute" />
+                          <span class="chakra-radio__control css-1rggdzb" aria-hidden="true"></span>
+                          <span class="chakra-radio__label css-1i66d7g">Female</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="age-label" for="age" class="chakra-form__label css-2gx1h6">Age</label>
+                    <style data-emotion="css 5vz1f0">
+                      .css-5vz1f0 {
+                        position: relative;
+                        z-index: 0;
+                        --number-input-stepper-width: 24px;
+                        --number-input-input-padding: calc(var(--number-input-stepper-width) + 0.5rem);
+                      }
+                    </style>
+                    <div value="" class="chakra-numberinput css-5vz1f0">
+                      <style data-emotion="css 64fodi">
+                        .css-64fodi {
+                          width: 100%;
+                          min-width: 0px;
+                          outline: 2px solid transparent;
+                          outline-offset: 2px;
+                          position: relative;
+                          -webkit-appearance: none;
+                          -moz-appearance: none;
+                          -ms-appearance: none;
+                          appearance: none;
+                          transition-property: var(--chakra-transition-property-common);
+                          transition-duration: var(--chakra-transition-duration-normal);
+                          font-size: var(--chakra-fontSizes-md);
+                          -webkit-padding-start: var(--chakra-space-4);
+                          padding-inline-start: var(--chakra-space-4);
+                          -webkit-padding-end: var(--number-input-input-padding);
+                          padding-inline-end: var(--number-input-input-padding);
+                          height: var(--chakra-sizes-10);
+                          border-radius: var(--chakra-radii-md);
+                          vertical-align: top;
+                          border: 1px solid;
+                          border-color: inherit;
+                          background: inherit;
+                        }
+
+                        .css-64fodi:hover,
+                        .css-64fodi[data-hover] {
+                          border-color: var(--chakra-colors-gray-300);
+                        }
+
+                        .css-64fodi[aria-readonly=true],
+                        .css-64fodi[readonly],
+                        .css-64fodi[data-readonly] {
+                          box-shadow: none !important;
+                          -webkit-user-select: all;
+                          -moz-user-select: all;
+                          -ms-user-select: all;
+                          user-select: all;
+                        }
+
+                        .css-64fodi[disabled],
+                        .css-64fodi[aria-disabled=true],
+                        .css-64fodi[data-disabled] {
+                          opacity: 0.4;
+                          cursor: not-allowed;
+                        }
+
+                        .css-64fodi[aria-invalid=true],
+                        .css-64fodi[data-invalid] {
+                          border-color: #E53E3E;
+                          box-shadow: 0 0 0 1px #E53E3E;
+                        }
+
+                        .css-64fodi:focus,
+                        .css-64fodi[data-focus] {
+                          z-index: 1;
+                          border-color: #3182ce;
+                          box-shadow: 0 0 0 1px #3182ce;
+                        }
+                      </style>
+                      <input type="text" inputMode="decimal" pattern="[0-9]*(.[0-9]+)?" id="age" aria-readonly="false" aria-required="false" value="" role="spinbutton" aria-valuemin="10" aria-valuemax="99" autoComplete="off" autoCorrect="off" class="chakra-numberinput__field css-64fodi" />
+                      <style data-emotion="css 1jj9yua">
+                        .css-1jj9yua {
+                          display: -webkit-box;
+                          display: -webkit-flex;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-flex-direction: column;
+                          -ms-flex-direction: column;
+                          flex-direction: column;
+                          position: absolute;
+                          top: 0px;
+                          right: 0px;
+                          margin: 1px;
+                          height: calc(100% - 2px);
+                          z-index: 1;
+                          width: var(--number-input-stepper-width);
+                        }
+                      </style>
+                      <div aria-hidden="true" class="css-1jj9yua">
+                        <style data-emotion="css mxool3">
+                          .css-mxool3 {
+                            border-inline-start: 1px solid;
+                            border-inline-start-color: inherit;
+                            color: inherit;
+                            font-size: calc(1rem * 0.75);
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-flex: 1;
+                            -ms-flex: 1;
+                            flex: 1;
+                            transition-property: var(--chakra-transition-property-common);
+                            transition-duration: var(--chakra-transition-duration-normal);
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            cursor: pointer;
+                            line-height: var(--chakra-lineHeights-normal);
+                          }
+
+                          .css-mxool3:active,
+                          .css-mxool3[data-active] {
+                            background: var(--chakra-colors-gray-200);
+                          }
+
+                          .css-mxool3[disabled],
+                          .css-mxool3[aria-disabled=true],
+                          .css-mxool3[data-disabled] {
+                            opacity: 0.4;
+                            cursor: not-allowed;
+                          }
+
+                          .css-mxool3:first-of-type {
+                            border-top-right-radius: var(--chakra-radii-md);
+                          }
+
+                          .css-mxool3:last-of-type {
+                            border-bottom-right-radius: var(--chakra-radii-md);
+                            margin-top: -1px;
+                            border-top-width: 1px;
+                          }
+                        </style>
+                        <div role="button" tabindex="-1" class="css-mxool3">
+                          <style data-emotion="css onkibi">
+                            .css-onkibi {
+                              width: 1em;
+                              height: 1em;
+                              display: inline-block;
+                              line-height: 1em;
+                              -webkit-flex-shrink: 0;
+                              -ms-flex-negative: 0;
+                              flex-shrink: 0;
+                              color: currentColor;
+                              vertical-align: middle;
+                            }
+                          </style>
+                          <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                            <path fill="currentColor" d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"></path>
+                          </svg>
+                        </div>
+                        <div role="button" tabindex="-1" class="css-mxool3">
+                          <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                            <path fill="currentColor" d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="weight-label" for="weight" class="chakra-form__label css-2gx1h6">Weight</label>
+                    <style data-emotion="css 4302v8">
+                      .css-4302v8 {
+                        width: 100%;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        position: relative;
+                      }
+                    </style>
+                    <div class="chakra-input__group css-4302v8">
+                      <style data-emotion="css 18g31kk">
+                        .css-18g31kk {
+                          width: 100%;
+                          min-width: 0px;
+                          outline: 2px solid transparent;
+                          outline-offset: 2px;
+                          position: relative;
+                          -webkit-appearance: none;
+                          -moz-appearance: none;
+                          -ms-appearance: none;
+                          appearance: none;
+                          transition-property: var(--chakra-transition-property-common);
+                          transition-duration: var(--chakra-transition-duration-normal);
+                          font-size: var(--chakra-fontSizes-md);
+                          -webkit-padding-start: var(--chakra-space-4);
+                          padding-inline-start: var(--chakra-space-4);
+                          -webkit-padding-end: var(--chakra-space-10);
+                          padding-inline-end: var(--chakra-space-10);
+                          height: var(--chakra-sizes-10);
+                          border-radius: var(--chakra-radii-md);
+                          border: 1px solid;
+                          border-color: inherit;
+                          background: inherit;
+                        }
+
+                        .css-18g31kk:hover,
+                        .css-18g31kk[data-hover] {
+                          border-color: var(--chakra-colors-gray-300);
+                        }
+
+                        .css-18g31kk[aria-readonly=true],
+                        .css-18g31kk[readonly],
+                        .css-18g31kk[data-readonly] {
+                          box-shadow: none !important;
+                          -webkit-user-select: all;
+                          -moz-user-select: all;
+                          -ms-user-select: all;
+                          user-select: all;
+                        }
+
+                        .css-18g31kk[disabled],
+                        .css-18g31kk[aria-disabled=true],
+                        .css-18g31kk[data-disabled] {
+                          opacity: 0.4;
+                          cursor: not-allowed;
+                        }
+
+                        .css-18g31kk[aria-invalid=true],
+                        .css-18g31kk[data-invalid] {
+                          border-color: #E53E3E;
+                          box-shadow: 0 0 0 1px #E53E3E;
+                        }
+
+                        .css-18g31kk:focus,
+                        .css-18g31kk[data-focus] {
+                          z-index: 1;
+                          border-color: #3182ce;
+                          box-shadow: 0 0 0 1px #3182ce;
+                        }
+                      </style>
+                      <input value="" id="weight" class="chakra-input css-18g31kk" />
+                      <style data-emotion="css ur97uj">
+                        .css-ur97uj {
+                          right: 0;
+                          width: var(--chakra-sizes-10);
+                          height: var(--chakra-sizes-10);
+                          font-size: var(--chakra-fontSizes-md);
+                          display: -webkit-box;
+                          display: -webkit-flex;
+                          display: -ms-flexbox;
+                          display: flex;
+                          -webkit-align-items: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          -webkit-justify-content: center;
+                          justify-content: center;
+                          position: absolute;
+                          top: 0px;
+                          z-index: 2;
+                        }
+                      </style>
+                      <div class="chakra-input__right-element css-ur97uj">kg</div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="height-label" for="height" class="chakra-form__label css-2gx1h6">Height</label>
+                    <div class="chakra-input__group css-4302v8">
+                      <input value="" id="height" class="chakra-input css-18g31kk" />
+                      <div class="chakra-input__right-element css-ur97uj">cm</div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="pa-label" for="pa" class="chakra-form__label css-2gx1h6">How active are you during your leisure time (time you spend outside of gym)?
+                      <!-- -->
+                      <style data-emotion="css w4ub0m">
+                        .css-w4ub0m {
+                          width: 1em;
+                          height: 1em;
+                          display: inline-block;
+                          line-height: 1em;
+                          -webkit-flex-shrink: 0;
+                          -ms-flex-negative: 0;
+                          flex-shrink: 0;
+                          color: currentColor;
+                          vertical-align: middle;
+                          cursor: pointer;
+                        }
+                      </style>
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-w4ub0m" id="popover-trigger-paPopover" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-paPopover">
+                        <path fill="currentColor" d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm.25,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12.25,5ZM14.5,18.5h-4a1,1,0,0,1,0-2h.75a.25.25,0,0,0,.25-.25v-4.5a.25.25,0,0,0-.25-.25H10.5a1,1,0,0,1,0-2h1a2,2,0,0,1,2,2v4.75a.25.25,0,0,0,.25.25h.75a1,1,0,1,1,0,2Z"></path>
+                      </svg>
+                      <style data-emotion="css 1qq679y">
+                        .css-1qq679y {
+                          z-index: 10;
+                        }
+                      </style>
+                      <div style="visibility:hidden;position:absolute;min-width:max-content;inset:0 auto auto 0" class="chakra-popover__popper css-1qq679y">
+                        <style data-emotion="css 1kc7s1q">
+                          .css-1kc7s1q {
+                            position: relative;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-flex-direction: column;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            --popper-bg: var(--chakra-colors-white);
+                            background: var(--popper-bg);
+                            --popper-arrow-bg: var(--popper-bg);
+                            --popper-arrow-shadow-color: var(--chakra-colors-gray-200);
+                            width: var(--chakra-sizes-xs);
+                            border: 1px solid;
+                            border-color: inherit;
+                            border-radius: var(--chakra-radii-md);
+                            box-shadow: var(--chakra-shadows-sm);
+                            z-index: inherit;
+                          }
+
+                          .css-1kc7s1q:focus,
+                          .css-1kc7s1q[data-focus] {
+                            outline: 2px solid transparent;
+                            outline-offset: 2px;
+                            box-shadow: var(--chakra-shadows-outline);
+                          }
+                        </style>
+                        <section style="transform-origin:var(--popper-transform-origin);opacity:0;visibility:hidden;transform:scale(0.95) translateZ(0)" id="popover-content-paPopover" tabindex="-1" role="dialog" class="chakra-popover__content css-1kc7s1q">
+                          <div data-popper-arrow="" style="position:absolute" class="chakra-popover__arrow-positioner css-0">
+                            <div class="chakra-popover__arrow css-0" data-popper-arrow-inner=""></div>
+                          </div>
+                          <style data-emotion="css dtrjyt">
+                            .css-dtrjyt {
+                              outline: 2px solid transparent;
+                              outline-offset: 2px;
+                              display: -webkit-box;
+                              display: -webkit-flex;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              -webkit-justify-content: center;
+                              justify-content: center;
+                              -webkit-flex-shrink: 0;
+                              -ms-flex-negative: 0;
+                              flex-shrink: 0;
+                              width: var(--close-button-size);
+                              height: var(--close-button-size);
+                              border-radius: var(--chakra-radii-md);
+                              transition-property: var(--chakra-transition-property-common);
+                              transition-duration: var(--chakra-transition-duration-normal);
+                              --close-button-size: 24px;
+                              font-size: 10px;
+                              position: absolute;
+                              top: 0.25rem;
+                              right: 0.5rem;
+                              padding: 0.5rem;
+                            }
+
+                            .css-dtrjyt[disabled],
+                            .css-dtrjyt[aria-disabled=true],
+                            .css-dtrjyt[data-disabled] {
+                              opacity: 0.4;
+                              cursor: not-allowed;
+                              box-shadow: var(--chakra-shadows-none);
+                            }
+
+                            .css-dtrjyt:hover,
+                            .css-dtrjyt[data-hover] {
+                              background: var(--chakra-colors-blackAlpha-100);
+                            }
+
+                            .css-dtrjyt:active,
+                            .css-dtrjyt[data-active] {
+                              background: var(--chakra-colors-blackAlpha-200);
+                            }
+
+                            .css-dtrjyt:focus,
+                            .css-dtrjyt[data-focus] {
+                              box-shadow: var(--chakra-shadows-outline);
+                            }
+                          </style>
+                          <button type="button" aria-label="Close" class="css-dtrjyt">
+                            <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" aria-hidden="true">
+                              <path fill="currentColor" d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"></path>
+                            </svg>
+                          </button>
+                          <style data-emotion="css 18mouaw">
+                            .css-18mouaw {
+                              -webkit-padding-start: var(--chakra-space-3);
+                              padding-inline-start: var(--chakra-space-3);
+                              -webkit-padding-end: var(--chakra-space-3);
+                              padding-inline-end: var(--chakra-space-3);
+                              padding-top: var(--chakra-space-2);
+                              padding-bottom: var(--chakra-space-2);
+                              border-bottom-width: 1px;
+                              font-weight: var(--chakra-fontWeights-bold);
+                              font-size: var(--chakra-fontSizes-lg);
+                            }
+                          </style>
+                          <header id="popover-header-paPopover" class="chakra-popover__header css-18mouaw">Leisure Time Activity Level</header>
+                          <style data-emotion="css 1ews2c8">
+                            .css-1ews2c8 {
+                              -webkit-padding-start: var(--chakra-space-3);
+                              padding-inline-start: var(--chakra-space-3);
+                              -webkit-padding-end: var(--chakra-space-3);
+                              padding-inline-end: var(--chakra-space-3);
+                              padding-top: var(--chakra-space-2);
+                              padding-bottom: var(--chakra-space-2);
+                            }
+                          </style>
+                          <div id="popover-body-paPopover" class="chakra-popover__body css-1ews2c8">This is to identify how active you are during your leisure time when you are not doing exercise. <style data-emotion="css 7dctin">
+                              .css-7dctin {
+                                transition-property: var(--chakra-transition-property-common);
+                                transition-duration: var(--chakra-transition-duration-fast);
+                                transition-timing-function: var(--chakra-transition-easing-ease-out);
+                                cursor: pointer;
+                                -webkit-text-decoration: underline;
+                                text-decoration: underline;
+                                outline: 2px solid transparent;
+                                outline-offset: 2px;
+                                color: inherit;
+                                font-style: italic;
+                              }
+
+                              .css-7dctin:hover,
+                              .css-7dctin[data-hover] {
+                                -webkit-text-decoration: underline;
+                                text-decoration: underline;
+                              }
+
+                              .css-7dctin:focus,
+                              .css-7dctin[data-focus] {
+                                box-shadow: var(--chakra-shadows-outline);
+                              }
+                            </style>
+                            <a target="_blank" rel="noopener noreferrer" class="chakra-link css-7dctin" href="https://pubmed.ncbi.nlm.nih.gov/12782543/">Please be warned that research has shown most people tend to overestimate their activity level <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                  <path d="M15 3h6v6"></path>
+                                  <path d="M10 14L21 3"></path>
+                                </g>
+                              </svg>
+                            </a>. If you spend most of your time outside of gym sitting in front of the computer, <a target="_blank" rel="noopener noreferrer" class="chakra-link css-7dctin" href="https://pubmed.ncbi.nlm.nih.gov/17234257/">please select sedentary <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                  <path d="M15 3h6v6"></path>
+                                  <path d="M10 14L21 3"></path>
+                                </g>
+                              </svg>
+                            </a>. <br />
+                            <br />If you think you are in between two activity levels, choose the lower one. You can always adjust later based on your progress.
+                          </div>
+                        </section>
+                      </div>
+                    </label>
+                    <style data-emotion="css 42b2qy">
+                      .css-42b2qy {
+                        width: 100%;
+                        height: -webkit-fit-content;
+                        height: -moz-fit-content;
+                        height: fit-content;
+                        position: relative;
+                      }
+                    </style>
+                    <div class="chakra-select__wrapper css-42b2qy">
+                      <style data-emotion="css 1tc12v8">
+                        .css-1tc12v8 {
+                          width: 100%;
+                          min-width: 0px;
+                          outline: 2px solid transparent;
+                          outline-offset: 2px;
+                          position: relative;
+                          -webkit-appearance: none;
+                          -moz-appearance: none;
+                          -ms-appearance: none;
+                          appearance: none;
+                          transition-property: var(--chakra-transition-property-common);
+                          transition-duration: var(--chakra-transition-duration-normal);
+                          background: inherit;
+                          padding-bottom: 1px;
+                          line-height: var(--chakra-lineHeights-normal);
+                          font-size: var(--chakra-fontSizes-md);
+                          -webkit-padding-start: var(--chakra-space-4);
+                          padding-inline-start: var(--chakra-space-4);
+                          -webkit-padding-end: 2rem;
+                          padding-inline-end: 2rem;
+                          height: var(--chakra-sizes-10);
+                          border-radius: var(--chakra-radii-md);
+                          border: 1px solid;
+                          border-color: inherit;
+                        }
+
+                        .css-1tc12v8>option,
+                        .css-1tc12v8>optgroup {
+                          background: var(--chakra-colors-white);
+                        }
+
+                        .css-1tc12v8:hover,
+                        .css-1tc12v8[data-hover] {
+                          border-color: var(--chakra-colors-gray-300);
+                        }
+
+                        .css-1tc12v8[aria-readonly=true],
+                        .css-1tc12v8[readonly],
+                        .css-1tc12v8[data-readonly] {
+                          box-shadow: none !important;
+                          -webkit-user-select: all;
+                          -moz-user-select: all;
+                          -ms-user-select: all;
+                          user-select: all;
+                        }
+
+                        .css-1tc12v8[disabled],
+                        .css-1tc12v8[aria-disabled=true],
+                        .css-1tc12v8[data-disabled] {
+                          opacity: 0.4;
+                          cursor: not-allowed;
+                        }
+
+                        .css-1tc12v8[aria-invalid=true],
+                        .css-1tc12v8[data-invalid] {
+                          border-color: #E53E3E;
+                          box-shadow: 0 0 0 1px #E53E3E;
+                        }
+
+                        .css-1tc12v8:focus,
+                        .css-1tc12v8[data-focus] {
+                          z-index: unset;
+                          border-color: #3182ce;
+                          box-shadow: 0 0 0 1px #3182ce;
+                        }
+                      </style>
+                      <select id="pa" class="chakra-select css-1tc12v8">
+                        <option selected="" value="">- Please select your leisure time physical activity level</option>
+                        <option value="1.2">Sedentary - either sitting or lying most time of the day</option>
+                        <option value="1.375">Lightly active - equivalent daily walking distance of 2km (approximate)</option>
+                        <option value="1.55">Moderately active - equivalent daily walking distance of 4km (approximate)</option>
+                        <option value="1.725">Very active - equivalent daily walking distance of 10km (approximate)</option>
+                        <option value="1.9">Extremely active - equivalent daily walking distance of 16km or above (approximate)</option>
+                      </select>
+                      <style data-emotion="css zj2dqk">
+                        .css-zj2dqk {
+                          width: 1.5rem;
+                          height: 100%;
+                          right: 0.5rem;
+                          position: absolute;
+                          color: currentColor;
+                          font-size: 1.25rem;
+                          display: -webkit-inline-box;
+                          display: -webkit-inline-flex;
+                          display: -ms-inline-flexbox;
+                          display: inline-flex;
+                          -webkit-align-items: center;
+                          -webkit-box-align: center;
+                          -ms-flex-align: center;
+                          align-items: center;
+                          -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                          -webkit-justify-content: center;
+                          justify-content: center;
+                          pointer-events: none;
+                          top: 50%;
+                          -webkit-transform: translateY(-50%);
+                          -moz-transform: translateY(-50%);
+                          -ms-transform: translateY(-50%);
+                          transform: translateY(-50%);
+                        }
+
+                        .css-zj2dqk[disabled],
+                        .css-zj2dqk[aria-disabled=true],
+                        .css-zj2dqk[data-disabled] {
+                          opacity: 0.5;
+                        }
+                      </style>
+                      <div class="chakra-select__icon-wrapper css-zj2dqk">
+                        <svg viewBox="0 0 24 24" role="presentation" class="chakra-select__icon" focusable="false" aria-hidden="true" style="width:1em;height:1em;color:currentColor">
+                          <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="sport-label" for="sport" class="chakra-form__label css-2gx1h6">How many calories you burn daily (on average) in gym (or other form of exercises)?
+                      <!-- -->
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-w4ub0m" id="popover-trigger-sportPopover" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-sportPopover">
+                        <path fill="currentColor" d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm.25,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12.25,5ZM14.5,18.5h-4a1,1,0,0,1,0-2h.75a.25.25,0,0,0,.25-.25v-4.5a.25.25,0,0,0-.25-.25H10.5a1,1,0,0,1,0-2h1a2,2,0,0,1,2,2v4.75a.25.25,0,0,0,.25.25h.75a1,1,0,1,1,0,2Z"></path>
+                      </svg>
+                      <div style="visibility:hidden;position:absolute;min-width:max-content;inset:0 auto auto 0" class="chakra-popover__popper css-1qq679y">
+                        <section style="transform-origin:var(--popper-transform-origin);opacity:0;visibility:hidden;transform:scale(0.95) translateZ(0)" id="popover-content-sportPopover" tabindex="-1" role="dialog" class="chakra-popover__content css-1kc7s1q">
+                          <div data-popper-arrow="" style="position:absolute" class="chakra-popover__arrow-positioner css-0">
+                            <div class="chakra-popover__arrow css-0" data-popper-arrow-inner=""></div>
+                          </div>
+                          <button type="button" aria-label="Close" class="css-dtrjyt">
+                            <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" aria-hidden="true">
+                              <path fill="currentColor" d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"></path>
+                            </svg>
+                          </button>
+                          <header id="popover-header-sportPopover" class="chakra-popover__header css-18mouaw">Calories burnt during exercise</header>
+                          <div id="popover-body-sportPopover" class="chakra-popover__body css-1ews2c8">This is to identify how many calories you burn during your everyday exercise session. This might include cardio, dancing, HIIT, weight lifting and so on. If you don&#x27;t exercise everyday, estimate your daily average in a week. For example, if you hit the gym five times a week, and burn about 500 Calories in each gym seesion, then your daily average would be 500 * 5 / 7 = 357 Calories. <br />
+                            <br />For common cardio exercises like bicycling, swimming, jogging, etc. you should be able to have a rough idea of how much energy you burn based on time and intensity. For weight lifting, every 30 minutes of lifting (including rest time between sets) typically burns 100 to 200 Calories, depending on your body weight and intensity.
+                          </div>
+                        </section>
+                      </div>
+                    </label>
+                    <div value="" class="chakra-numberinput css-5vz1f0">
+                      <input type="text" inputMode="decimal" pattern="[0-9]*(.[0-9]+)?" id="sport" placeholder="Please provide daily calories burnt during exercises" aria-readonly="false" aria-required="false" value="" role="spinbutton" aria-valuemin="0" aria-valuemax="9999" autoComplete="off" autoCorrect="off" class="chakra-numberinput__field css-64fodi" />
+                      <div aria-hidden="true" class="css-1jj9yua">
+                        <div role="button" tabindex="-1" class="css-mxool3">
+                          <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                            <path fill="currentColor" d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"></path>
+                          </svg>
+                        </div>
+                        <div role="button" tabindex="-1" class="css-mxool3">
+                          <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                            <path fill="currentColor" d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="bodyFat-label" for="bodyFat" class="chakra-form__label css-2gx1h6">Body fat <span style="color:darkgrey"> (Optional. But if you know your body fat, you&#x27;ll get a more accurate result.)</span>
+                    </label>
+                    <div class="chakra-input__group css-4302v8">
+                      <input placeholder="Optional. But if you know your body fat, you&#x27;ll get a more accurate result." value="" id="bodyFat" class="chakra-input css-18g31kk" />
+                      <div class="chakra-input__right-element css-ur97uj">%</div>
+                    </div>
+                  </div>
+                  <div role="group" class="chakra-form-control css-1kxonj9">
+                    <label id="goal-label" for="goal" class="chakra-form__label css-2gx1h6">Fitness goal <span style="color:darkgrey"> (This question won&#x27;t affect your TDEE result, but will be used to calculate the recommanded macros intake for you.)</span>
+                    </label>
+                    <div class="chakra-select__wrapper css-42b2qy">
+                      <select id="goal" class="chakra-select css-1tc12v8">
+                        <option value="-0.2">Cutting - consume 80% of TDEE daily</option>
+                        <option value="-0.1">Cutting slowly (minimizing muscle loss) - consume 90% of TDEE daily</option>
+                        <option selected="" value="0">Maintain weight - consume 100% of TDEE daily</option>
+                        <option value="0.1">Bulking slowly (minimizing fat gain) - consume 110% of TDEE daily</option>
+                        <option value="0.2">Bulking - consume 120% of TDEE daily</option>
+                      </select>
+                      <div class="chakra-select__icon-wrapper css-zj2dqk">
+                        <svg viewBox="0 0 24 24" role="presentation" class="chakra-select__icon" focusable="false" aria-hidden="true" style="width:1em;height:1em;color:currentColor">
+                          <path fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <style data-emotion="css k008qs">
+                  .css-k008qs {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                </style>
+                <div class="Form_CalculateButtonContainer__3Sizy css-k008qs">
+                  <style data-emotion="css 17xejub">
+                    .css-17xejub {
+                      -webkit-flex: 1;
+                      -ms-flex: 1;
+                      flex: 1;
+                      justify-self: stretch;
+                      -webkit-align-self: stretch;
+                      -ms-flex-item-align: stretch;
+                      align-self: stretch;
+                    }
+                  </style>
+                  <div class="css-17xejub"></div>
+                  <style data-emotion="css 1q6rjbf">
+                    .css-1q6rjbf {
+                      display: -webkit-inline-box;
+                      display: -webkit-inline-flex;
+                      display: -ms-inline-flexbox;
+                      display: inline-flex;
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      -ms-appearance: none;
+                      appearance: none;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      -webkit-user-select: none;
+                      -moz-user-select: none;
+                      -ms-user-select: none;
+                      user-select: none;
+                      position: relative;
+                      white-space: nowrap;
+                      vertical-align: middle;
+                      outline: 2px solid transparent;
+                      outline-offset: 2px;
+                      width: auto;
+                      line-height: 1.2;
+                      border-radius: var(--chakra-radii-md);
+                      font-weight: var(--chakra-fontWeights-semibold);
+                      transition-property: var(--chakra-transition-property-common);
+                      transition-duration: var(--chakra-transition-duration-normal);
+                      height: var(--chakra-sizes-12);
+                      min-width: var(--chakra-sizes-12);
+                      font-size: var(--chakra-fontSizes-lg);
+                      -webkit-padding-start: var(--chakra-space-6);
+                      padding-inline-start: var(--chakra-space-6);
+                      -webkit-padding-end: var(--chakra-space-6);
+                      padding-inline-end: var(--chakra-space-6);
+                      background: var(--chakra-colors-teal-500);
+                      color: var(--chakra-colors-white);
+                      padding: 1rem 4rem;
+                    }
+
+                    .css-1q6rjbf:focus,
+                    .css-1q6rjbf[data-focus] {
+                      box-shadow: var(--chakra-shadows-outline);
+                    }
+
+                    .css-1q6rjbf[disabled],
+                    .css-1q6rjbf[aria-disabled=true],
+                    .css-1q6rjbf[data-disabled] {
+                      opacity: 0.4;
+                      cursor: not-allowed;
+                      box-shadow: var(--chakra-shadows-none);
+                    }
+
+                    .css-1q6rjbf:hover,
+                    .css-1q6rjbf[data-hover] {
+                      background: var(--chakra-colors-teal-600);
+                    }
+
+                    .css-1q6rjbf:hover[disabled],
+                    .css-1q6rjbf[data-hover][disabled],
+                    .css-1q6rjbf:hover[aria-disabled=true],
+                    .css-1q6rjbf[data-hover][aria-disabled=true],
+                    .css-1q6rjbf:hover[data-disabled],
+                    .css-1q6rjbf[data-hover][data-disabled] {
+                      background: var(--chakra-colors-teal-500);
+                    }
+
+                    .css-1q6rjbf:active,
+                    .css-1q6rjbf[data-active] {
+                      background: var(--chakra-colors-teal-700);
+                    }
+                  </style>
+                  <button type="button" class="chakra-button css-1q6rjbf">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <hr aria-orientation="horizontal" class="chakra-divider css-svjswr" />
+            <style data-emotion="css 8atqhb">
+              .css-8atqhb {
+                width: 100%;
+              }
+            </style>
+            <div class="css-8atqhb">
+              <style data-emotion="css 15g2oxy">
+                .css-15g2oxy {
+                  margin-top: 1rem;
+                }
+              </style>
+              <div class="chakra-wrap css-15g2oxy">
+                <style data-emotion="css umyqv7">
+                  .css-umyqv7 {
+                    --chakra-wrap-spacing: 0.5rem;
+                    --wrap-spacing: calc(var(--chakra-wrap-spacing) / 2);
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 0px;
+                    margin: calc(var(--wrap-spacing) * -1);
+                  }
+
+                  .css-umyqv7>*:not(style) {
+                    margin: var(--wrap-spacing);
+                  }
+                </style>
+                <ul class="chakra-wrap__list css-umyqv7">
+                  <style data-emotion="css 14x12o8">
+                    .css-14x12o8 {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: flex-start;
+                      -webkit-box-align: flex-start;
+                      -ms-flex-align: flex-start;
+                      align-items: flex-start;
+                      -webkit-padding-start: 1rem;
+                      padding-inline-start: 1rem;
+                      -webkit-padding-end: 1rem;
+                      padding-inline-end: 1rem;
+                    }
+                  </style>
+                  <li class="chakra-wrap__listitem css-14x12o8">
+                    <style data-emotion="css 1wjtfsg">
+                      .css-1wjtfsg {
+                        display: grid;
+                        grid-gap: var(--chakra-space-2);
+                        grid-template-rows: repeat(5, 1fr);
+                        grid-template-columns: repeat(1, 1fr);
+                        height: 16rem;
+                        width: 14rem;
+                      }
+                    </style>
+                    <div class="css-1wjtfsg">
+                      <style data-emotion="css 1pms3ts">
+                        .css-1pms3ts {
+                          grid-column: span 1/span 1;
+                          grid-row: span 1/span 1;
+                        }
+                      </style>
+                      <div class="css-1pms3ts">
+                        <style data-emotion="css tkevr6">
+                          .css-tkevr6 {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            height: 100%;
+                          }
+                        </style>
+                        <div class="css-tkevr6">
+                          <style data-emotion="css 1102jpf">
+                            .css-1102jpf {
+                              font-size: xx-large;
+                              font-weight: var(--chakra-fontWeights-bold);
+                            }
+                          </style>
+                          <div class="css-1102jpf">TDEE</div> (In Calories)
+                        </div>
+                      </div>
+                      <style data-emotion="css 1aim35i">
+                        .css-1aim35i {
+                          grid-column: span 1/span 1;
+                          grid-row: span 4/span 4;
+                          background: #d77b6a;
+                          border-radius: var(--chakra-radii-lg);
+                        }
+                      </style>
+                      <div class="css-1aim35i">
+                        <style data-emotion="css 1htwisw">
+                          .css-1htwisw {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            color: var(--chakra-colors-white);
+                            height: 100%;
+                            font-size: 3rem;
+                            font-weight: var(--chakra-fontWeights-bold);
+                          }
+                        </style>
+                        <div class="css-1htwisw">0</div>
+                      </div>
+                    </div>
+                  </li>
+                  <style data-emotion="css 6qo6f4">
+                    .css-6qo6f4 {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: flex-start;
+                      -webkit-box-align: flex-start;
+                      -ms-flex-align: flex-start;
+                      align-items: flex-start;
+                      padding-top: 1rem;
+                      padding-bottom: 1rem;
+                      max-width: 50%;
+                      min-width: 16rem;
+                    }
+                  </style>
+                  <li class="chakra-wrap__listitem css-6qo6f4">
+                    <style data-emotion="css 113nhb4">
+                      .css-113nhb4 {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-flex-direction: column;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                      }
+
+                      .css-113nhb4>*:not(style)~*:not(style) {
+                        margin-top: 1rem;
+                        -webkit-margin-end: 0px;
+                        margin-inline-end: 0px;
+                        margin-bottom: 0px;
+                        -webkit-margin-start: 0px;
+                        margin-inline-start: 0px;
+                      }
+                    </style>
+                    <div class="chakra-stack css-113nhb4">
+                      <style data-emotion="css 10gf8jm">
+                        .css-10gf8jm {
+                          width: 100%;
+                          -webkit-margin-start: auto;
+                          margin-inline-start: auto;
+                          -webkit-margin-end: auto;
+                          margin-inline-end: auto;
+                          max-width: 60ch;
+                          -webkit-padding-start: 1rem;
+                          padding-inline-start: 1rem;
+                          -webkit-padding-end: 1rem;
+                          padding-inline-end: 1rem;
+                        }
+                      </style>
+                      <div class="chakra-container css-10gf8jm">
+                        <div class="chakra-container css-10gf8jm">Depending on whether or not you know your bady fat percentage, we will use either the <span style="font-style:italic">Katch-McArdle</span> or the <span style="font-style:italic">Mifflin-St Jeor</span> formula to calculate your TDEE. The table below will show how your TDEE would differ if you were to change your daily activity level. </div>
+                      </div>
+                      <style data-emotion="css zldw15">
+                        .css-zldw15 {
+                          font-variant-numeric: lining-nums tabular-nums;
+                          border-collapse: collapse;
+                          width: 90%;
+                        }
+                      </style>
+                      <table role="table" class="chakra-table css-zldw15">
+                        <thead class="css-0">
+                          <tr role="row" class="css-0">
+                            <style data-emotion="css r10se1">
+                              .css-r10se1 {
+                                font-family: var(--chakra-fonts-heading);
+                                font-weight: var(--chakra-fontWeights-bold);
+                                text-transform: uppercase;
+                                letter-spacing: var(--chakra-letterSpacings-wider);
+                                text-align: start;
+                                -webkit-padding-start: var(--chakra-space-4);
+                                padding-inline-start: var(--chakra-space-4);
+                                -webkit-padding-end: var(--chakra-space-4);
+                                padding-inline-end: var(--chakra-space-4);
+                                padding-top: var(--chakra-space-1);
+                                padding-bottom: var(--chakra-space-1);
+                                line-height: var(--chakra-lineHeights-4);
+                                font-size: var(--chakra-fontSizes-xs);
+                                color: var(--chakra-colors-gray-600);
+                                border-bottom: var(--chakra-borders-1px);
+                                border-color: var(--chakra-colors-gray-100);
+                              }
+
+                              .css-r10se1[data-is-numeric=true] {
+                                text-align: end;
+                              }
+                            </style>
+                            <th class="css-r10se1">Leisure Time Activity Level</th>
+                            <th data-is-numeric="true" class="css-r10se1">TDEE</th>
+                          </tr>
+                        </thead>
+                        <style data-emotion="css tdnrhj">
+                          .css-tdnrhj tr:nth-of-type(odd) th,
+                          .css-tdnrhj tr:nth-of-type(odd) td {
+                            border-bottom-width: 1px;
+                            border-color: var(--chakra-colors-gray-100);
+                          }
+
+                          .css-tdnrhj tr:nth-of-type(odd) td {
+                            background: var(--chakra-colors-gray-100);
+                          }
+                        </style>
+                        <tbody class="css-tdnrhj">
+                          <tr role="row" class="css-0">
+                            <style data-emotion="css 1eyncsv">
+                              .css-1eyncsv {
+                                text-align: start;
+                                -webkit-padding-start: var(--chakra-space-4);
+                                padding-inline-start: var(--chakra-space-4);
+                                -webkit-padding-end: var(--chakra-space-4);
+                                padding-inline-end: var(--chakra-space-4);
+                                padding-top: var(--chakra-space-2);
+                                padding-bottom: var(--chakra-space-2);
+                                font-size: var(--chakra-fontSizes-sm);
+                                line-height: var(--chakra-lineHeights-4);
+                                border-bottom: var(--chakra-borders-1px);
+                                border-color: var(--chakra-colors-gray-100);
+                              }
+
+                              .css-1eyncsv[data-is-numeric=true] {
+                                text-align: end;
+                              }
+                            </style>
+                            <td role="gridcell" class="css-1eyncsv">Sedentary</td>
+                            <td role="gridcell" data-is-numeric="true" class="css-1eyncsv">非數值</td>
+                          </tr>
+                          <tr role="row" class="css-0">
+                            <td role="gridcell" class="css-1eyncsv">Lightly Active</td>
+                            <td role="gridcell" data-is-numeric="true" class="css-1eyncsv">非數值</td>
+                          </tr>
+                          <tr role="row" class="css-0">
+                            <td role="gridcell" class="css-1eyncsv">Moderately Active</td>
+                            <td role="gridcell" data-is-numeric="true" class="css-1eyncsv">非數值</td>
+                          </tr>
+                          <tr role="row" class="css-0">
+                            <td role="gridcell" class="css-1eyncsv">Very active</td>
+                            <td role="gridcell" data-is-numeric="true" class="css-1eyncsv">非數值</td>
+                          </tr>
+                          <tr role="row" class="css-0">
+                            <td role="gridcell" class="css-1eyncsv">Extremely active</td>
+                            <td role="gridcell" data-is-numeric="true" class="css-1eyncsv">非數值</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <style data-emotion="css 1fyttco">
+                .css-1fyttco {
+                  width: 100%;
+                  padding: 1rem;
+                }
+              </style>
+              <div class="css-1fyttco">
+                <span style="font-weight:bold;font-size:x-large">Your BMR is <span style="font-size:xx-large">0</span> Cal </span>
+                <br />
+                <span>BMR stands for <span style="font-style:italic">Basal Metabolic Rate</span>. This is the minimum energy required to keep you alive if you were in a coma. It is used to maintain basic functionality of your body, such as heart beating, breathing, maintaining internal temperature, etc. </span>
+              </div>
+              <hr aria-orientation="horizontal" class="chakra-divider css-svjswr" />
+              <div class="css-1fyttco">
+                <span style="font-weight:bold;font-size:xx-large">Calories and Macros Intake</span>
+                <br />
+                <span>Based on you fitness goal, your suggested <span style="font-style:italic">Total Daily Calories Intake</span> is <span style="font-weight:bold;font-size:large">0</span>. If you want, you could adjust this value in the input box below: </span>
+                <style data-emotion="css 13y6vid">
+                  .css-13y6vid {
+                    width: 100%;
+                    position: relative;
+                    padding-top: 1rem;
+                  }
+                </style>
+                <div role="group" class="chakra-form-control css-13y6vid">
+                  <label id="calIntake-label" for="calIntake" class="chakra-form__label css-2gx1h6">Total Daily Calories Intake:</label>
+                  <style data-emotion="css s6j3up">
+                    .css-s6j3up {
+                      position: relative;
+                      z-index: 0;
+                      --number-input-stepper-width: 24px;
+                      --number-input-input-padding: calc(var(--number-input-stepper-width) + 0.5rem);
+                      width: 100%;
+                    }
+                  </style>
+                  <div value="0" class="chakra-numberinput css-s6j3up">
+                    <input type="text" inputMode="decimal" pattern="[0-9]*(.[0-9]+)?" id="calIntake" aria-readonly="false" aria-required="false" value="0" role="spinbutton" aria-valuemin="0" aria-valuemax="999999" aria-valuenow="0" aria-valuetext="0" autoComplete="off" autoCorrect="off" class="chakra-numberinput__field css-64fodi" />
+                    <div aria-hidden="true" class="css-1jj9yua">
+                      <div role="button" tabindex="-1" class="css-mxool3">
+                        <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                          <path fill="currentColor" d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"></path>
+                        </svg>
+                      </div>
+                      <div role="button" tabindex="-1" disabled="" aria-disabled="true" class="css-mxool3">
+                        <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                          <path fill="currentColor" d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />The recommended protein intake is 30% of your total daily calories intake. You can adjust this percentage if you like but note that 20% - 25% is the lower bar for the amount of protein required for muscle growth. Usually choosing a higher protein diet would force you to eat more &quot;clean&quot; food and less junk food. If you would like to choose a different protein intake, edit the box below:
+              </div>
+              <style data-emotion="css st8inq">
+                .css-st8inq {
+                  width: 100%;
+                  position: relative;
+                  padding: 1rem;
+                  padding-top: 0px;
+                }
+              </style>
+              <div role="group" class="chakra-form-control css-st8inq">
+                <label id="proteinPercent-label" for="proteinPercent" class="chakra-form__label css-2gx1h6">Protein intake percentage:</label>
+                <style data-emotion="css 1koq8lw">
+                  .css-1koq8lw {
+                    position: relative;
+                    z-index: 0;
+                    --number-input-stepper-width: 24px;
+                    --number-input-input-padding: calc(var(--number-input-stepper-width) + 0.5rem);
+                    width: 40%;
+                  }
+                </style>
+                <div value="30" class="chakra-numberinput css-1koq8lw">
+                  <input type="text" inputMode="decimal" pattern="[0-9]*(.[0-9]+)?" id="proteinPercent" aria-readonly="false" aria-required="false" value="30" role="spinbutton" aria-valuemin="1" aria-valuemax="99" aria-valuenow="30" aria-valuetext="30" autoComplete="off" autoCorrect="off" class="chakra-numberinput__field css-64fodi" />
+                  <div aria-hidden="true" class="css-1jj9yua">
+                    <div role="button" tabindex="-1" class="css-mxool3">
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                        <path fill="currentColor" d="M12.8,5.4c-0.377-0.504-1.223-0.504-1.6,0l-9,12c-0.228,0.303-0.264,0.708-0.095,1.047 C2.275,18.786,2.621,19,3,19h18c0.379,0,0.725-0.214,0.895-0.553c0.169-0.339,0.133-0.744-0.095-1.047L12.8,5.4z"></path>
+                      </svg>
+                    </div>
+                    <div role="button" tabindex="-1" class="css-mxool3">
+                      <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi">
+                        <path fill="currentColor" d="M21,5H3C2.621,5,2.275,5.214,2.105,5.553C1.937,5.892,1.973,6.297,2.2,6.6l9,12 c0.188,0.252,0.485,0.4,0.8,0.4s0.611-0.148,0.8-0.4l9-12c0.228-0.303,0.264-0.708,0.095-1.047C21.725,5.214,21.379,5,21,5z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Results_MacrosTable__2PjJW css-8atqhb">
+                <style data-emotion="css zla4of">
+                  .css-zla4of {
+                    font-variant-numeric: lining-nums tabular-nums;
+                    border-collapse: collapse;
+                    width: var(--chakra-sizes-full);
+                    max-width: 90%;
+                  }
+                </style>
+                <table role="table" class="chakra-table css-zla4of">
+                  <thead class="css-0">
+                    <tr role="row" class="css-0">
+                      <th class="css-r10se1">Macros</th>
+                      <th data-is-numeric="true" class="css-r10se1">Gram</th>
+                      <th data-is-numeric="true" class="css-r10se1">Calories</th>
+                      <th data-is-numeric="true" class="css-r10se1">Calories%</th>
+                    </tr>
+                  </thead>
+                  <style data-emotion="css 722v25">
+                    .css-722v25 {
+                      font-weight: var(--chakra-fontWeights-bold);
+                    }
+                  </style>
+                  <tbody class="css-722v25">
+                    <tr role="row" class="css-0">
+                      <style data-emotion="css 1ag5tb7">
+                        .css-1ag5tb7 {
+                          text-align: start;
+                          -webkit-padding-start: var(--chakra-space-4);
+                          padding-inline-start: var(--chakra-space-4);
+                          -webkit-padding-end: var(--chakra-space-4);
+                          padding-inline-end: var(--chakra-space-4);
+                          padding-top: var(--chakra-space-2);
+                          padding-bottom: var(--chakra-space-2);
+                          font-size: var(--chakra-fontSizes-lg);
+                          line-height: var(--chakra-lineHeights-4);
+                          border-bottom: var(--chakra-borders-1px);
+                          border-color: var(--chakra-colors-gray-100);
+                        }
+
+                        .css-1ag5tb7[data-is-numeric=true] {
+                          text-align: end;
+                        }
+                      </style>
+                      <td role="gridcell" class="Results_MacrosName___hVCD css-1ag5tb7">Protein</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0
+                        <!-- --> g
+                      </td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">30
+                        <!-- -->%
+                      </td>
+                    </tr>
+                    <tr role="row" class="css-0">
+                      <td role="gridcell" class="Results_MacrosName___hVCD css-1ag5tb7">Fat</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0
+                        <!-- --> g
+                      </td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">28
+                        <!-- -->%
+                      </td>
+                    </tr>
+                    <tr role="row" class="css-0">
+                      <td role="gridcell" class="Results_MacrosName___hVCD css-1ag5tb7">Carbs</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0
+                        <!-- --> g
+                      </td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">0</td>
+                      <td role="gridcell" data-is-numeric="true" class="css-1ag5tb7">42
+                        <!-- -->%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="css-1fyttco">
+                <style data-emotion="css 361w70">
+                  .css-361w70 {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    font-size: large;
+                  }
+                </style>
+                <div class="css-361w70">
+                  <div class="css-0">Fat</div>
+                  <div class="css-17xejub"></div>
+                  <div class="css-0">Carbs</div>
+                </div>
+                <style data-emotion="css 17m87zz">
+                  .css-17m87zz {
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    width: 100%;
+                  }
+
+                  .css-17m87zz[disabled],
+                  .css-17m87zz[aria-disabled=true],
+                  .css-17m87zz[data-disabled] {
+                    opacity: 0.6;
+                    cursor: default;
+                    pointer-events: none;
+                  }
+                </style>
+                <div tabindex="-1" style="position:relative;touch-action:none;-webkit-tap-highlight-color:rgba(0,0,0,0);user-select:none;outline:0;padding-top:0;padding-bottom:0" class="chakra-slider css-17m87zz">
+                  <style data-emotion="css t6tlbl">
+                    .css-t6tlbl {
+                      overflow: hidden;
+                      border-radius: var(--chakra-radii-sm);
+                      background: teal;
+                      height: 4px;
+                    }
+
+                    .css-t6tlbl[disabled],
+                    .css-t6tlbl[aria-disabled=true],
+                    .css-t6tlbl[data-disabled] {
+                      background: var(--chakra-colors-gray-300);
+                    }
+                  </style>
+                  <div id="slider-track-fatCarbsRatioSlider" style="position:absolute;top:50%;transform:translateY(-50%);width:100%" class="chakra-slider__track css-t6tlbl">
+                    <style data-emotion="css 15gafpu">
+                      .css-15gafpu {
+                        width: inherit;
+                        height: inherit;
+                        background: var(--chakra-colors-yellow-500);
+                      }
+                    </style>
+                    <div style="position:absolute;top:50%;transform:translateY(-50%);width:40%;left:0%" class="chakra-slider__filled-track css-15gafpu"></div>
+                  </div>
+                  <style data-emotion="css 1sth7vg">
+                    .css-1sth7vg {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      position: absolute;
+                      outline: 2px solid transparent;
+                      outline-offset: 2px;
+                      z-index: 1;
+                      border-radius: var(--chakra-radii-full);
+                      background: var(--chakra-colors-white);
+                      box-shadow: var(--chakra-shadows-base);
+                      border: 1px solid;
+                      border-color: var(--chakra-colors-transparent);
+                      transition-property: transform;
+                      transition-duration: var(--chakra-transition-duration-normal);
+                      top: 50%;
+                      -webkit-transform: translateY(-50%);
+                      -moz-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                      transform: translateY(-50%);
+                      width: 14px;
+                      height: 14px;
+                    }
+
+                    .css-1sth7vg:focus,
+                    .css-1sth7vg[data-focus] {
+                      box-shadow: var(--chakra-shadows-outline);
+                    }
+
+                    .css-1sth7vg[disabled],
+                    .css-1sth7vg[aria-disabled=true],
+                    .css-1sth7vg[data-disabled] {
+                      background: var(--chakra-colors-gray-300);
+                    }
+
+                    .css-1sth7vg:active,
+                    .css-1sth7vg[data-active] {
+                      -webkit-transform: translateY(-50%) scale(1.15);
+                      -moz-transform: translateY(-50%) scale(1.15);
+                      -ms-transform: translateY(-50%) scale(1.15);
+                      transform: translateY(-50%) scale(1.15);
+                    }
+                  </style>
+                  <div role="slider" tabindex="0" id="slider-thumb-fatCarbsRatioSlider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40" aria-orientation="horizontal" aria-label="fat-carbs-ratio" style="position:absolute;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;touch-action:none;left:calc(40% - 0px)" class="chakra-slider__thumb css-1sth7vg"></div>
+                  <input type="hidden" value="40" />
+                </div>
+                <style data-emotion="css 18kfyny">
+                  .css-18kfyny {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    font-size: x-large;
+                  }
+                </style>
+                <div class="css-18kfyny">Fat to Carbs Ratio
+                  <!-- --> -
+                  <!-- -->40
+                  <!-- --> :
+                  <!-- -->60
+                </div>
+              </div>
+              <div class="css-1fyttco">
+                <span>The default fat to carbs calories intake ratio is set to 40 : 60. However, you can change this ratio based on your personal preference, as long as it&#x27;s not too extreme on either side. In general, the more active you are, the more likely your body would like a higher carbs intake. <br />
+                  <br />Although the fat to carbs ratio is mostly just a matter of personal choice, keep in mind that you should not set the ratio too low. <span style="font-weight:bold"> Generally your daily fat intake (calorie-wise) needs to be at least 15% - 20% of your total calories intake. </span>Having your fat intake lower than this would lead to health issues like dry rashes, hair loss, weaker immune system, and issues related to vitamin deficiencies. To modify your fat-carbs ratio, move the slider above and see how it affects your daily macros. </span>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="Footer_footer__317iK">
+          <style data-emotion="css 10gf8jm">
+            .css-10gf8jm {
+              width: 100%;
+              -webkit-margin-start: auto;
+              margin-inline-start: auto;
+              -webkit-margin-end: auto;
+              margin-inline-end: auto;
+              max-width: 60ch;
+              -webkit-padding-start: 1rem;
+              padding-inline-start: 1rem;
+              -webkit-padding-end: 1rem;
+              padding-inline-end: 1rem;
+            }
+          </style>
+          <div class="chakra-container css-10gf8jm">
+            <style data-emotion="css gmuwbf">
+              .css-gmuwbf {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+              }
+            </style>
+            <div class="css-gmuwbf">
+              <div class="chakra-wrap Footer_shareIcons__2Y4vg css-0">
+                <style data-emotion="css umyqv7">
+                  .css-umyqv7 {
+                    --chakra-wrap-spacing: 0.5rem;
+                    --wrap-spacing: calc(var(--chakra-wrap-spacing) / 2);
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 0px;
+                    margin: calc(var(--wrap-spacing) * -1);
+                  }
+
+                  .css-umyqv7>*:not(style) {
+                    margin: var(--wrap-spacing);
+                  }
+                </style>
+                <ul class="chakra-wrap__list css-umyqv7">
+                  <button aria-label="facebook" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#3b5998"></circle>
+                      <path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="twitter" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#00aced"></circle>
+                      <path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="pinterest" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#cb2128"></circle>
+                      <path d="M32,16c-8.8,0-16,7.2-16,16c0,6.6,3.9,12.2,9.6,14.7c0-1.1,0-2.5,0.3-3.7 c0.3-1.3,2.1-8.7,2.1-8.7s-0.5-1-0.5-2.5c0-2.4,1.4-4.1,3.1-4.1c1.5,0,2.2,1.1,2.2,2.4c0,1.5-0.9,3.7-1.4,5.7 c-0.4,1.7,0.9,3.1,2.5,3.1c3,0,5.1-3.9,5.1-8.5c0-3.5-2.4-6.1-6.7-6.1c-4.9,0-7.9,3.6-7.9,7.7c0,1.4,0.4,2.4,1.1,3.1 c0.3,0.3,0.3,0.5,0.2,0.9c-0.1,0.3-0.3,1-0.3,1.3c-0.1,0.4-0.4,0.6-0.8,0.4c-2.2-0.9-3.3-3.4-3.3-6.1c0-4.5,3.8-10,11.4-10 c6.1,0,10.1,4.4,10.1,9.2c0,6.3-3.5,11-8.6,11c-1.7,0-3.4-0.9-3.9-2c0,0-0.9,3.7-1.1,4.4c-0.3,1.2-1,2.5-1.6,3.4 c1.4,0.4,3,0.7,4.5,0.7c8.8,0,16-7.2,16-16C48,23.2,40.8,16,32,16z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="tumblr" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#2c4762"></circle>
+                      <path d="M39.2,41c-0.6,0.3-1.6,0.5-2.4,0.5c-2.4,0.1-2.9-1.7-2.9-3v-9.3h6v-4.5h-6V17c0,0-4.3,0-4.4,0 c-0.1,0-0.2,0.1-0.2,0.2c-0.3,2.3-1.4,6.4-5.9,8.1v3.9h3V39c0,3.4,2.5,8.1,9,8c2.2,0,4.7-1,5.2-1.8L39.2,41z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="reddit" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#5f99cf"></circle>
+                      <path d="m 52.8165,31.942362 c 0,-2.4803 -2.0264,-4.4965 -4.5169,-4.4965 -1.2155,0 -2.3171,0.4862 -3.128,1.2682 -3.077,-2.0247 -7.2403,-3.3133 -11.8507,-3.4782 l 2.5211,-7.9373 6.8272,1.5997 -0.0102,0.0986 c 0,2.0281 1.6575,3.6771 3.6958,3.6771 2.0366,0 3.6924,-1.649 3.6924,-3.6771 0,-2.0281 -1.6575,-3.6788 -3.6924,-3.6788 -1.564,0 -2.8968,0.9758 -3.4357,2.3443 l -7.3593,-1.7255 c -0.3213,-0.0782 -0.6477,0.1071 -0.748,0.4233 L 32,25.212062 c -4.8246,0.0578 -9.1953,1.3566 -12.41,3.4425 -0.8058,-0.7446 -1.8751,-1.2104 -3.0583,-1.2104 -2.4905,0 -4.5152,2.0179 -4.5152,4.4982 0,1.649 0.9061,3.0787 2.2389,3.8607 -0.0884,0.4794 -0.1462,0.9639 -0.1462,1.4569 0,6.6487 8.1736,12.0581 18.2223,12.0581 10.0487,0 18.224,-5.4094 18.224,-12.0581 0,-0.4658 -0.0493,-0.9248 -0.1275,-1.377 1.4144,-0.7599 2.3885,-2.2304 2.3885,-3.9406 z m -29.2808,3.0872 c 0,-1.4756 1.207,-2.6775 2.6894,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 -1.4824,0 -2.6894,-1.2002 -2.6894,-2.6758 z m 15.4037,7.9373 c -1.3549,1.3481 -3.4816,2.0043 -6.5008,2.0043 l -0.0221,-0.0051 -0.0221,0.0051 c -3.0209,0 -5.1476,-0.6562 -6.5008,-2.0043 -0.2465,-0.2448 -0.2465,-0.6443 0,-0.8891 0.2465,-0.2465 0.6477,-0.2465 0.8942,0 1.105,1.0999 2.9393,1.6337 5.6066,1.6337 l 0.0221,0.0051 0.0221,-0.0051 c 2.6673,0 4.5016,-0.5355 5.6066,-1.6354 0.2465,-0.2465 0.6477,-0.2448 0.8942,0 0.2465,0.2465 0.2465,0.6443 0,0.8908 z m -0.3213,-5.2615 c -1.4824,0 -2.6877,-1.2002 -2.6877,-2.6758 0,-1.4756 1.2053,-2.6775 2.6877,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="linkedin" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#007fb1"></circle>
+                      <path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="whatsapp" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#25D366"></circle>
+                      <path d="m42.32286,33.93287c-0.5178,-0.2589 -3.04726,-1.49644 -3.52105,-1.66732c-0.4712,-0.17346 -0.81554,-0.2589 -1.15987,0.2589c-0.34175,0.51004 -1.33075,1.66474 -1.63108,2.00648c-0.30032,0.33658 -0.60064,0.36247 -1.11327,0.12945c-0.5178,-0.2589 -2.17994,-0.80259 -4.14759,-2.56312c-1.53269,-1.37217 -2.56312,-3.05503 -2.86603,-3.57283c-0.30033,-0.5178 -0.03366,-0.80259 0.22524,-1.06149c0.23301,-0.23301 0.5178,-0.59547 0.7767,-0.90616c0.25372,-0.31068 0.33657,-0.5178 0.51262,-0.85437c0.17088,-0.36246 0.08544,-0.64725 -0.04402,-0.90615c-0.12945,-0.2589 -1.15987,-2.79613 -1.58964,-3.80584c-0.41424,-1.00971 -0.84142,-0.88027 -1.15987,-0.88027c-0.29773,-0.02588 -0.64208,-0.02588 -0.98382,-0.02588c-0.34693,0 -0.90616,0.12945 -1.37736,0.62136c-0.4712,0.5178 -1.80194,1.76053 -1.80194,4.27186c0,2.51134 1.84596,4.945 2.10227,5.30747c0.2589,0.33657 3.63497,5.51458 8.80262,7.74113c1.23237,0.5178 2.1903,0.82848 2.94111,1.08738c1.23237,0.38836 2.35599,0.33657 3.24402,0.20712c0.99159,-0.15534 3.04985,-1.24272 3.47963,-2.45956c0.44013,-1.21683 0.44013,-2.22654 0.31068,-2.45955c-0.12945,-0.23301 -0.46601,-0.36247 -0.98382,-0.59548m-9.40068,12.84407l-0.02589,0c-3.05503,0 -6.08417,-0.82849 -8.72495,-2.38189l-0.62136,-0.37023l-6.47252,1.68286l1.73463,-6.29129l-0.41424,-0.64725c-1.70875,-2.71846 -2.6149,-5.85116 -2.6149,-9.07706c0,-9.39809 7.68934,-17.06155 17.15993,-17.06155c4.58253,0 8.88029,1.78642 12.11655,5.02268c3.23625,3.21036 5.02267,7.50812 5.02267,12.06476c-0.0078,9.3981 -7.69712,17.06155 -17.14699,17.06155m14.58906,-31.58846c-3.93529,-3.80584 -9.1133,-5.95471 -14.62789,-5.95471c-11.36055,0 -20.60848,9.2065 -20.61625,20.52564c0,3.61684 0.94757,7.14565 2.75211,10.26282l-2.92557,10.63564l10.93337,-2.85309c3.0136,1.63108 6.4052,2.4958 9.85634,2.49839l0.01037,0c11.36574,0 20.61884,-9.2091 20.62403,-20.53082c0,-5.48093 -2.14111,-10.64081 -6.03239,-14.51915" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="telegram" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#37aee2"></circle>
+                      <path d="m45.90873,15.44335c-0.6901,-0.0281 -1.37668,0.14048 -1.96142,0.41265c-0.84989,0.32661 -8.63939,3.33986 -16.5237,6.39174c-3.9685,1.53296 -7.93349,3.06593 -10.98537,4.24067c-3.05012,1.1765 -5.34694,2.05098 -5.4681,2.09312c-0.80775,0.28096 -1.89996,0.63566 -2.82712,1.72788c-0.23354,0.27218 -0.46884,0.62161 -0.58825,1.10275c-0.11941,0.48114 -0.06673,1.09222 0.16682,1.5716c0.46533,0.96052 1.25376,1.35737 2.18443,1.71383c3.09051,0.99037 6.28638,1.93508 8.93263,2.8236c0.97632,3.44171 1.91401,6.89571 2.84116,10.34268c0.30554,0.69185 0.97105,0.94823 1.65764,0.95525l-0.00351,0.03512c0,0 0.53908,0.05268 1.06412,-0.07375c0.52679,-0.12292 1.18879,-0.42846 1.79109,-0.99212c0.662,-0.62161 2.45836,-2.38812 3.47683,-3.38552l7.6736,5.66477l0.06146,0.03512c0,0 0.84989,0.59703 2.09312,0.68132c0.62161,0.04214 1.4399,-0.07726 2.14229,-0.59176c0.70766,-0.51626 1.1765,-1.34683 1.396,-2.29506c0.65673,-2.86224 5.00979,-23.57745 5.75257,-27.00686l-0.02107,0.08077c0.51977,-1.93157 0.32837,-3.70159 -0.87096,-4.74991c-0.60054,-0.52152 -1.2924,-0.7498 -1.98425,-0.77965l0,0.00176zm-0.2072,3.29069c0.04741,0.0439 0.0439,0.0439 0.00351,0.04741c-0.01229,-0.00351 0.14048,0.2072 -0.15804,1.32576l-0.01229,0.04214l-0.00878,0.03863c-0.75858,3.50668 -5.15554,24.40802 -5.74203,26.96472c-0.08077,0.34417 -0.11414,0.31959 -0.09482,0.29852c-0.1756,-0.02634 -0.50045,-0.16506 -0.52679,-0.1756l-13.13468,-9.70175c4.4988,-4.33199 9.09945,-8.25307 13.744,-12.43229c0.8218,-0.41265 0.68483,-1.68573 -0.29852,-1.70681c-1.04305,0.24584 -1.92279,0.99564 -2.8798,1.47502c-5.49971,3.2626 -11.11882,6.13186 -16.55882,9.49279c-2.792,-0.97105 -5.57873,-1.77704 -8.15298,-2.57601c2.2336,-0.89555 4.00889,-1.55579 5.75608,-2.23009c3.05188,-1.1765 7.01687,-2.7042 10.98537,-4.24067c7.94051,-3.06944 15.92667,-6.16346 16.62028,-6.43037l0.05619,-0.02283l0.05268,-0.02283c0.19316,-0.0878 0.30378,-0.09658 0.35471,-0.10009c0,0 -0.01756,-0.05795 -0.00351,-0.04566l-0.00176,0zm-20.91715,22.0638l2.16687,1.60145c-0.93418,0.91311 -1.81743,1.77353 -2.45485,2.38812l0.28798,-3.98957" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="line" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#00b800"></circle>
+                      <path d="M52.62 30.138c0 3.693-1.432 7.019-4.42 10.296h.001c-4.326 4.979-14 11.044-16.201 11.972-2.2.927-1.876-.591-1.786-1.112l.294-1.765c.069-.527.142-1.343-.066-1.865-.232-.574-1.146-.872-1.817-1.016-9.909-1.31-17.245-8.238-17.245-16.51 0-9.226 9.251-16.733 20.62-16.733 11.37 0 20.62 7.507 20.62 16.733zM27.81 25.68h-1.446a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-8.985a.402.402 0 0 0-.402-.401zm9.956 0H36.32a.402.402 0 0 0-.402.401v5.338L31.8 25.858a.39.39 0 0 0-.031-.04l-.002-.003-.024-.025-.008-.007a.313.313 0 0 0-.032-.026.255.255 0 0 1-.021-.014l-.012-.007-.021-.012-.013-.006-.023-.01-.013-.005-.024-.008-.014-.003-.023-.005-.017-.002-.021-.003-.021-.002h-1.46a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-5.337l4.123 5.568c.028.04.063.072.101.099l.004.003a.236.236 0 0 0 .025.015l.012.006.019.01a.154.154 0 0 1 .019.008l.012.004.028.01.005.001a.442.442 0 0 0 .104.013h1.446a.4.4 0 0 0 .401-.4v-8.985a.402.402 0 0 0-.401-.401zm-13.442 7.537h-3.93v-7.136a.401.401 0 0 0-.401-.401h-1.447a.4.4 0 0 0-.401.401v8.984a.392.392 0 0 0 .123.29c.072.068.17.111.278.111h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401zm21.429-5.287c.222 0 .401-.18.401-.402v-1.446a.401.401 0 0 0-.401-.402h-5.778a.398.398 0 0 0-.279.113l-.005.004-.006.008a.397.397 0 0 0-.111.276v8.984c0 .108.043.206.112.278l.005.006a.401.401 0 0 0 .284.117h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401h-3.93v-1.519h3.93c.222 0 .401-.18.401-.402V29.85a.401.401 0 0 0-.401-.402h-3.93V27.93h3.93z" fill="white"></path>
+                    </svg>
+                  </button>
+                  <button aria-label="weibo" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;outline:none">
+                    <svg viewBox="0 0 64 64" width="32" height="32">
+                      <circle cx="32" cy="32" r="31" fill="#CD201F"></circle>
+                      <path d="M40.9756152,15.0217119 C40.5000732,15.0546301 39.9999314,15.1204666 39.5325878,15.2192213 C38.6634928,15.4085016 38.0977589,16.2643757 38.2863368,17.1284787 C38.4667163,18.0008129 39.3194143,18.5686519 40.1885094,18.3793715 C42.8613908,17.8115326 45.7720411,18.6427174 47.7316073,20.8153207 C49.6911735,22.996153 50.2077122,25.975254 49.3714112,28.5840234 C49.1008441,29.4316684 49.5763861,30.3533789 50.4208857,30.6249537 C51.2653852,30.8965286 52.1754769,30.4192153 52.4542425,29.5715703 C53.6349013,25.9011885 52.9133876,21.7699494 50.1585171,18.7085538 C48.0923641,16.4042776 45.2063093,15.1533848 42.3530505,15.0217119 C41.8775084,14.9970227 41.4511594,14.9887937 40.9756152,15.0217119 Z M27.9227762,19.8277737 C24.9957268,20.140498 20.863421,22.4365431 17.2312548,26.0822378 C13.2711279,30.0571148 11,34.2871065 11,37.9328012 C11,44.9032373 19.8713401,49.125 28.5786978,49.125 C39.9917329,49.125 47.600423,42.4261409 47.600423,37.1427636 C47.600423,33.9496952 44.9603397,32.1638816 42.549827,31.4149913 C41.9594976,31.2339421 41.5167516,31.1434164 41.8283133,30.3616079 C42.5006339,28.66632 42.6236176,27.1932286 41.8939054,26.1480742 C40.5328692,24.1894405 36.7203236,24.2881952 32.448635,26.0822378 C32.448635,26.0822378 31.1203949,26.6912261 31.4647526,25.6213825 C32.1206742,23.4981576 32.0304845,21.712342 31.0056075,20.6836478 C30.2840938,19.9512176 29.2510184,19.6878718 27.9227762,19.8277737 Z M42.0906819,20.6836478 C41.6233383,20.6589586 41.1723917,20.716566 40.7132466,20.8153207 C39.9671353,20.9716828 39.4997917,21.7781784 39.6637721,22.5270687 C39.8277525,23.275959 40.5574647,23.7450433 41.303576,23.5804521 C42.1972686,23.3911718 43.2057485,23.6380596 43.8616701,24.3704897 C44.5175916,25.1029198 44.6733735,26.0657797 44.3864073,26.9381118 C44.1486363,27.6705419 44.5093932,28.4770397 45.2391054,28.7156963 C45.9688176,28.9461239 46.780521,28.5922524 47.0100936,27.8598223 C47.584026,26.0740087 47.2396661,24.0248493 45.8950269,22.5270687 C44.886547,21.4078489 43.4845162,20.7494842 42.0906819,20.6836478 Z M29.496988,29.9665891 C35.3100922,30.1723275 39.9917329,33.0691319 40.3852858,37.0769272 C40.8362324,41.6607904 35.5970585,45.9319315 28.6442899,46.6232144 C21.6915214,47.3144973 15.6488446,44.154347 15.197898,39.5787128 C14.7469514,34.9948495 20.059916,30.7237084 27.004486,30.0324256 C27.8735831,29.950131 28.6688875,29.9336709 29.496988,29.9665891 Z M25.5614586,34.3776322 C23.183744,34.5916017 20.9372116,35.9577073 19.9205332,37.9328012 C18.5348994,40.6238672 19.9041362,43.6029661 23.0689567,44.582284 C26.340366,45.5945202 30.1857056,44.0638213 31.5303448,41.1587879 C32.8503864,38.3195909 31.1613894,35.3734082 27.9227762,34.5751416 C27.1438688,34.3776322 26.356763,34.3035667 25.5614586,34.3776322 Z M24.052839,38.7228388 C24.3316067,38.7310678 24.5857748,38.8215935 24.8399449,38.9203482 C25.8648218,39.3400561 26.1845841,40.4428158 25.5614586,41.4221338 C24.9219361,42.3932227 23.5690963,42.8623069 22.5442194,42.4096807 C21.5357395,41.9652856 21.2487754,40.8542948 21.8882979,39.9078951 C22.3638421,39.2001542 23.2247386,38.7146097 24.052839,38.7228388 Z" fill="white"></path>
+                    </svg>
+                  </button>
+                </ul>
+              </div>
+            </div>
+            <style data-emotion="css xi606m">
+              .css-xi606m {
+                text-align: center;
+              }
+            </style>
+            <p class="chakra-text Footer_footerText__t5KUl css-xi606m">
+              <style data-emotion="css 1isy0gc">
+                .css-1isy0gc {
+                  transition-property: var(--chakra-transition-property-common);
+                  transition-duration: var(--chakra-transition-duration-fast);
+                  transition-timing-function: var(--chakra-transition-easing-ease-out);
+                  cursor: pointer;
+                  -webkit-text-decoration: underline;
+                  text-decoration: underline;
+                  outline: 2px solid transparent;
+                  outline-offset: 2px;
+                  color: inherit;
+                  display: inline-block;
+                  font-size: large;
+                  font-weight: var(--chakra-fontWeights-bold);
+                }
+
+                .css-1isy0gc:hover,
+                .css-1isy0gc[data-hover] {
+                  -webkit-text-decoration: underline;
+                  text-decoration: underline;
+                }
+
+                .css-1isy0gc:focus,
+                .css-1isy0gc[data-focus] {
+                  box-shadow: var(--chakra-shadows-outline);
+                }
+              </style>
+              <a class="chakra-link css-1isy0gc" href="https://www.freeprivacypolicy.com/live/4213453c-fe11-4306-be9c-4c97dfcbb7a3">Privacy</a>
+              <!-- -->© 2022 Powered by <span class="Footer_logo__grJhl" style="font-size:x-large;font-weight:bold">AWS</span> | S3
+            </p>
+          </div>
+        </footer>
+      </div>
+      <span></span>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {}
+        },
+        "page": "/",
+        "query": {},
+        "buildId": "q8uAFVddB3-DoaCuKEJl0",
+        "assetPrefix": ".",
+        "nextExport": true,
+        "autoExport": true,
+        "isFallback": false,
+        "scriptLoader": []
+      }
+    </script>
+  </body>
+</html>
